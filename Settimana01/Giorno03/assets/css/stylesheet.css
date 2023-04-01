@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+html,body {
+    background-image: linear-gradient(to left, salmon, purple);
+    text-align: center;
+    font-family: 'Alkatra', cursive;
+}
+
+
+.white {
+    background-color: white;
+}
+
