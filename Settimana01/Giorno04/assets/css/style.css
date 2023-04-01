@@ -122,10 +122,10 @@ h2 {
 
 #logo {
 
-    padding: 5%;
-    width: 80%;
+    padding: 10%;
+    width: 70%;
 }
-}
+
 
 
 
@@ -209,6 +209,24 @@ input[type=text] {
     text-align: left;
     border: #666;
 }
+
+.article a {
+
+    color: #009ec8;
+    padding-left: 5%;
+}
+
+.cat {
+
+    padding-left: 5%;
+}
+
+.data {
+
+    padding-left: 55%;
+    padding-bottom: 5%;
+}
+
 
 footer {
 
