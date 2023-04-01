@@ -6,34 +6,47 @@ body {
 
     margin: 0 auto;
     padding: 0;
+    line-height: 2rem;
     background-image: url('../img/sfondo.png');
     box-sizing: border-box;
     background-repeat: repeat-y;
+    background-position: 50%;
     font-family: 'Poppins', sans-serif;
 }
 
 header {
 
     margin: 0.9rem;
-
+    padding-bottom: 5%;
     background-image: linear-gradient(to bottom, rgba(0, 160, 198, 1), rgba(3, 109, 134, 1));
     box-shadow: 0 2px 10px 1px #666;
     text-align: center;
-
-
-
-
-
-
 }
 
+.fa-star {
+
+    margin-right: 5px;
+    color: white;
+    font-size: smaller;
+}
+
+.fa-star:hover {
+
+    color: red;
+} 
+
+ 
 header p {
     margin: 0;
     text-transform: uppercase;
     color: white;
     font-weight: bold;
+    font-size: larger;
 }
 
+header a {
+    font-weight: bold;
+}
 header nav {
 
     margin: 0;
@@ -69,28 +82,56 @@ main {
     box-shadow: 0 2px 10px 1px #666;
 
 }
+#writer {
+    color: #afa699;
+    font-size: 150%;
+}
+
+.fa-pen-to-square, .fa-clock {
+
+    margin-right: 3px;
+}
 
 main p {
 
     font-size: 120%;
+    
+}
+
+ section + p {
+
+    color: #afa699;
 }
 
 h1 {
 
+    
     font-size: 250%;
     margin-bottom: 0;
+    line-height: 3rem;
+}
+
+h2 {
+
+    color: black;
+    text-align: center;
+    font-size: 200%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 }
 
 #logo {
     width: 70%;
-    margin: 20px;
+    margin: 50px;
 
 }
 
 
 
 .span {
-    background-color: rgb(191, 185, 185);
+    background-color: #e0e1e2;
+    border: 1px solid #a9a8a9;
     border-radius: 10%;
 
 }
@@ -109,12 +150,12 @@ thead {
 table {
     width: 100%;
     border-collapse: collapse;
-
+    line-height: 3em;
     border-bottom: #3f6bca;
     
 }
 
-tbody tr:nth-child(odd) {
+tbody tr:nth-child(even) {
 
     background-color: #f3f3f3;
 }
@@ -137,7 +178,7 @@ iframe {
 }
 
 #news {
-    background-color: rgb(191, 185, 185);
+    background-color: #e0e1e2;
 }
 
 #news h1 {
@@ -162,7 +203,7 @@ input[type=text] {
 
 .article {
     
-    background-color:rgb(191, 185, 185) ;
+    background-color:#e0e1e2 ;
     text-align: left;
     border: #666;
 }

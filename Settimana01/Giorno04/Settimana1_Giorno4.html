@@ -9,6 +9,7 @@
         content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile.">
     <title>Sviluppo di una pagina web - Blog Epicode</title>
     <link rel="icon" href="assets/img/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -24,17 +25,17 @@
 
         <nav>
             <ul>
-                <li> <a class="list" href="" title="Home" target="_blank">Home</a> </li>
-                <li> <a class="list" href="" title="Articoli" target="_blank">Articoli</a> </li>
-                <li> <a class="list" href="" title="Lavora con noi" target="_blank">Lavora con noi</a> </li>
+                <li><a class="list" href="" title="Home" target="_blank"><i class="fa-regular fa-star"></i>Home</a> </li>
+                <li><a class="list" href="" title="Articoli" target="_blank"><i class="fa-regular fa-star"></i>Articoli</a> </li>
+                <li><a class="list" href="" title="Lavora con noi" target="_blank"><i class="fa-regular fa-star"></i>Lavora con noi</a> </li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h1><strong>dhpdhipdCome creare un template per i post</strong></h1>
-            <p>di Mario Rossi - pubblicato il 25-10-2020</p>
+            <h1><strong>Come creare un template per i post</strong></h1>
+            <p id="writer"><i class="fa-regular fa-pen-to-square"></i>di Mario Rossi - <i class="fa-regular fa-clock"></i>pubblicato il 25-10-2020</p>
             <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <b>parti comuni</b> da
                 applicare a tutte le pagine
 
@@ -65,12 +66,17 @@
                     <caption>Diffusione dei CSS</caption>
                     <thead>
                         <tr>
-                            <td><b>Anno</b></td>
-                            <td><b>% di utilizzo</b></td>
-                            <td><strong>Supporto browsers</strong></td>
+                            <td></td>
+                            <td>% di</td>
+                            <td>Supporto</td>
+                        </tr>
+                        <tr>
+                            <td>Anno</td>
+                            <td>utilizzo</td>
+                            <td>browser</td>
                         </tr>
                     </thead>
-                    <!-- Hai dimenticato il tbody! -->
+                   
                     <tbody>
                         <tr>
                             <td>2000</td>
@@ -115,7 +121,7 @@
         </aside>
 
         <section id="news">
-            <h1><strong>Novità</strong></h1>
+            <h2><strong>Novità</strong></h2>
             <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
             <form action="">
                 <fieldset>
@@ -126,7 +132,7 @@
         </section>
 
         <section>
-            <h1><strong>Articoli correlati</strong></h1>
+            <h2><strong>Articoli correlati</strong></h2>
             <article class="article">
                 <a href="" target="_blank">Validare il codice HTML</a>
                 <p>Categoria: develop</p>
