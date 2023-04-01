@@ -1,12 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
-html,body {
+
+
+
+
+
+body {
+    
+    margin: 0 auto;
     background-image: linear-gradient(to left, salmon, purple);
     text-align: center;
-    font-family: 'Alkatra', cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
 }
 
+h1,h2,h3,p,ol,ul {
 
-.white {
+    color: #333333;
+}
+
+/*Header*/
+
+#logo {
+
+    margin-top: 1%;
+    width: 10%;
+
+
+
+}
+
+header p {
+
+    margin-bottom: 30px;
+    padding: 5px 0;
     background-color: white;
+    font-size: 20%;
 }
 
+/*Main*/
+    /*Container*/
+
+    #container {
+     
+    padding: 0 20%;
+    }
+
+    /*section_intro*/
+
+    #section_intro h1 {
+
+        margin-bottom: 5px;
+        font-size: medium;
+
+
+    }
+
+    #section_intro + p {
+
+        font-size: small;
+        text-align: left;
+    }
+    
+    #section_intro div {
+
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+    video {
+
+        margin-bottom: 0;
+        
+        width: 80%;
+    }
+
+    #Sally {
+
+        font-size: small;
+
+    }
+
+    /*Ingredients_Method*/
+
+    #ingredients_method {
+
+        text-align: left;
+    }
+    
+    #featured {
+
+        margin-bottom: 5%;
+        padding-left: 2%;
+        border-left: 1px solid wheat;
+    }
+    #featured h2 {
+        color: red;
+        font-size: small;
+        margin-bottom: 0;
+    }
+
+    #featured p {
+
+        opacity: 1;
+        margin-top: 0;
+        font-size: smaller;
+    }
+
+        /*Ingredients*/
+
+        #ingredients h2 {
+
+            font-size: large;
+            font-weight: lighter;
+        }
+
+        #ingredients div {
+
+            font-size: small;
+        }
+
+
+        /*Method*/
+
+        #method h2 {
+
+            font-weight: lighter;
+            font-size: large;
+        }
+
+        #method ol {
+
+            font-size: small;
+        }
+
+      /*Form*/
+
+      #form {
+
+        color: #333333;
+        text-align: center;
+      }
+
+      #form fieldset {
+
+        border: none;
+      }
+
+      #select {
+
+        padding-right: 8%;
+      }
+
+      .label {
+
+        margin-right: 2%;
+      }
+        
+
+     
