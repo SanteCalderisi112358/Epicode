@@ -41,10 +41,11 @@ h1,h2 {
     /*Header*/
     header {
         background-color: black;
+        padding: 2.5rem 0;
     }
     #logo {
-        width: 50%;
-        padding: 2rem;
+        width: 40%;
+        display: inline-block;
     }
     
     /*Partiamo*/
@@ -130,10 +131,70 @@ h1,h2 {
         background-color: white;
     }
 
+    .card {
+        
+        border: solid 1px #dee1e3;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding-bottom: 0.5em;
+        margin-bottom: 2.5em;
+    }
+
     .card img{
 
         display: inline-block;
-        width: 80%;
+        width: 100%;
+    }
+
+    .wrapper h2 {
+
+        font-size: 1em;
+    }
+
+    .wrapper p {
+
+        font-size: 1.1em;
+        padding: 0 0.5em 0.5em;
+    }
+
+    
+    /*Footer*/
+
+    footer {
+
+        padding: 2.5em 0 5.5em;
+        background-color: #25a2c3;
+      
+    }
+
+    footer a, footer h2, footer p {
+
+        color: white;
+    }
+
+    footer address {
+
+        font-style: initial;
+        line-height: 0.5em;
+    }
+
+    footer h2 {
+
+        font-size: 2em;
+    }
+    
+    #copyright {
+
+        padding-top: 2.5em;
+        color: white;
+        border-top: 1px solid white;
+        margin: 0 8.5em;
+        font-size: 0.8em;
+    }
+    
+    .fa-solid {
+
+        margin-right: 0.5em;
     }
     
 
