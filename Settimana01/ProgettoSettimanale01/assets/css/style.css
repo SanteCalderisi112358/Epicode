@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+html {
+    margin: 0;
+    padding: 0;
+}
+/*Body*/
+body {
+
+    margin: 0 auto;
+    line-height: 1.65;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/*Headings*/
+
+h1,h2 {
+
+    color: #25a2c3;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 0.5em 0;
+}
+
+/*Main*/
+    main {
+        background-color: white;
+        padding-top: 1.5em;
+        padding-bottom: 2.5em;
+    }
+
+    main p {
+
+        font-size: 1.4em;
+    }
+    
+    /*Header*/
+    header {
+        background-color: black;
+    }
+    #logo {
+        width: 50%;
+        padding: 2rem;
+    }
+    
+    /*Partiamo*/
+    #start {
+
+        background-image: url("../img/banner.jpg");
+        text-align: center;
+        background-size: cover;
+        background-position-x: 45%;
+    }
+
+    #start h1 {
+
+        margin: 0;
+        padding: 10% 20%;
+    }
+
+    #start p {
+
+        margin: 0 auto;
+        padding: 0 5% 10%;
+        font-size: larger;
+    }
+    
+    #start button {
+
+        margin-bottom: 10%;
+        background-color: #f04c2f;
+        font-family: 'Montserrat', sans-serif;
+        border: none;
+        text-transform: uppercase;
+        color: white;
+        width: 240px;
+        padding: 1em;
+        font-size: 1.2em;
+        border-radius: 10%;
+    }
+
+    #central_pic {
+        margin-bottom: 1.5em;
+    }
+    #central_pic img {
+
+        border-radius: 100%;
+    }
+
+    /*Gaeranzie*/
+
+    aside {
+        background-color: #e22d0e;
+        padding: 1.5em 0;
+        color: white;
+        margin-bottom: 2.5em;
+    }
+
+    aside h2 {
+
+        color: white;
+        font-size: 2em;
+    }
+
+    aside blockquote {
+
+        font-style: italic;
+    }
+
+    aside p {
+
+        margin-bottom: 0;
+        font-size: 1.5em;
+    }
+
+    #ceo {
+
+        margin-top: 0;
+        font-size: 0.8em;
+    }
+    
+    /*Cards*/
+
+    #cards_section {
+
+        background-color: white;
+    }
+
+    .card img{
+
+        display: inline-block;
+        width: 80%;
+    }
+    
+
+    
