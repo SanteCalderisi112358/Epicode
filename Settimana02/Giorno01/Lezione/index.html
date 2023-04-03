@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primi esempi Javascript</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--se proviamo a mettere lo script js nell'head mi da un errore, cioè non trova document.getElementById('saluto').innerHTML='CIAO!' nel file js, è come se non esistesse. Questo perchè nel momento in cui cerca di compilarlo, cerca un id=saluto che ancora non esiste in quanto il DOM non è stato ancora caricato. Spostandolo prima della chiusura del body, allora scrive CIAO! Dopo il caricamento del DOM, allora l'id=saluto esiste e verrà correttamente renderizzato-->
+</head>
+<body>
+    <div class="container">
+        <h1>PRIMI ESEMPI JAVASCRIPT</h1>
+        <hr>
+        <h3>In questa pagina vedremo i primi esempi di funzionamento e di intervento sul DOM di Javascript</h3>
+
+        <p id="saluto"></p> <!--Js ha bisogno di sapere a chi fare riferimento tramite gli id. NB js è IDENTIFICATIVO e agisce solamente sul primo id che trova cancellando gli eventuali altri. se provo ad aggiungere un ulteriore <p id="saluto"></p> comunque ne visualizza solo uno. Se però cambio id (cambiando quindi la sintassi di document) allora ne stampa un altro-->
+        <p id="saluto2"></p>
+        <script src="assets/js/script.js"></script>
+    </div>
+</body>
+</html>
+

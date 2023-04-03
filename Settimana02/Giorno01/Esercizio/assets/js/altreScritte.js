@@ -18,6 +18,6 @@ var criceto = "criceto";
 var giraffa = "giraffa";
 var leone = "leone";
 
-console.log(criceto);
+console.log('criceto');
 console.log(giraffa);
 console.log(leone);
