@@ -75,4 +75,9 @@ else {
     document.getElementById('errore').innerHTML = 'Il valore è' + nome
 }
 
-/*
+function clicca() {
+    document.write('❤️❤️❤️❤️❤️');
+}
+
+/* questa funzione, quando si clicca sul button, cancella il DOM
+perchè document.write agisce sul body 
