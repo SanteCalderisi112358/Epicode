@@ -24,6 +24,12 @@ body {
 #link+a {
     text-decoration: none;
 }
+
+#anchor {
+
+    text-decoration: none;
+}
+
 #link a {
 
     color: white;
