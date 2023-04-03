@@ -47,3 +47,20 @@ ORDINE DI APPARIZIONE:
 ...indipendentemente da come scrivo js. Javascript interagisce
 prima con i browser e poi col dom, infatti compaiono prima gli
 alert che sono oggetti del window, cioè la finestra del browser.
+*/
+var numero = 5;
+document.getElementById('numero').innerHTML =numero;
+
+document.getElementById('somma').innerHTML = numero + 3;
+/* Stampa prima 5 e poi la somma */
+
+var altroTesto = 'numero';
+document.getElementById('altroTesto').innerHTML = altroTesto;
+function riassegna() {
+
+    altroTesto='Ho cambiato il valore della variabile';
+}
+
+riassegna();
+/*Esempio di una funzione di tipo VOID, cioè OPERATIVO.
+NB RICORDA DI CHIAMARE LA FUNZIONE!!! riga 64 
