@@ -80,4 +80,4 @@ function clicca() {
 }
 
 /* questa funzione, quando si clicca sul button, cancella il DOM
-perchè document.write agisce sul body 
+perchè document.write agisce sul body*/
