@@ -2,40 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-
-    padding-left: 10em;
     font-family: 'Roboto', sans-serif;
     background-color: #415fe1;
     color: white;
 }
 
-#yellowBox {
 
-    color: black;
-    background-color: yellow;
-    width: 300px;
-    height: 180px;
-    margin: 0;
-    text-align: right;
-    font-weight: bolder;
-    padding-top: 100px;
-    font-size: 11em;
-}
-#link+a {
-    text-decoration: none;
+main {
+
+    margin: 0 auto;
+    padding-left: 7em;
 }
 
-#anchor {
+img {
 
-    text-decoration: none;
+    width: 30%;
 }
 
-#link a {
+a:link, a:visited {
 
     color: white;
+    text-decoration: none;
 }
 
-#link a:hover {
+a:hover {
 
-    color: black;
+    color:black
 }
