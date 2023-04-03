@@ -64,3 +64,15 @@ function riassegna() {
 riassegna();
 /*Esempio di una funzione di tipo VOID, cioè OPERATIVO.
 NB RICORDA DI CHIAMARE LA FUNZIONE!!! riga 64 
+*/
+
+var nome = 'Andrea';
+if (nome===undefined){
+
+    document.getElementById('errore')innerHTML = 'La variabile è undefined';
+}
+else {
+    document.getElementById('errore').innerHTML = 'Il valore è' + nome
+}
+
+/*
