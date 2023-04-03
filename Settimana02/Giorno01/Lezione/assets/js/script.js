@@ -72,7 +72,7 @@ if (nome===undefined){
     document.getElementById('errore')innerHTML = 'La variabile è undefined';
 }
 else {
-    document.getElementById('errore').innerHTML = 'Il valore è' + nome
+    document.getElementById('errore').innerHTML = 'Il valore è' + nome;
 }
 
 function clicca() {
@@ -80,4 +80,13 @@ function clicca() {
 }
 
 /* questa funzione, quando si clicca sul button, cancella il DOM
-perchè document.write agisce sul body*/
+perchè document.write agisce sul body
+NB sia dopo if che dopo la funzione ci sono le (). Al suo interno
+mettiamo sempre gli elementi che sefvono a quel determinato
+blocco per funzionare, cioè gli ARGOMENTI o PARAMETRI.
+In particolare: per l'if c'è una condizione che deve avverarsi (un ARGOMENTO),
+per getElement c'è un PARAMETRO (cioè la stringa id) così
+come anche per la function.
+All'interno delle {} scriaviamo le sitruzioni operative:
+NOME, PARAMETRI tra () e ISTRUZIONI tra {}.
+*/
