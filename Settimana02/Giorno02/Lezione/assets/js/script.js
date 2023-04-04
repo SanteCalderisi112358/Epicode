@@ -54,13 +54,13 @@ function calcolaEta(anno) {
 
 function verifica() {
 
-    stato = (eta>=18) ? 'Maggiorenne' : 'Minorenne';
+    stato = (eta>=18) ? 'maggiorenne' : 'minorenne';
 }
 
 function scrivi(nome) {
 
     document.getElementById('mioNome').innerHTML="CIAO!";
-    document.getElementById('miaVerifica').innerHTML = "La tua età è" + " " eta + "anni e sei" + " " + stato;
+    document.getElementById('miaVerifica').innerHTML = "La tua età è" +" "+ eta + " " + "anni e sei" + " " + stato;
 }
 
 function cancellaForm(nome, anno){
