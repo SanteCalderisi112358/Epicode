@@ -6,4 +6,19 @@ body {
     text-align: left;
     padding-left: 10%;
     padding-right: 50%;
+    
+}
+
+main {
+    background-color: aquamarine;
+}
+
+div {
+
+    padding-left: 10%;
+}
+
+h1 {
+
+    padding: 5% 0 0 5%;
 }
