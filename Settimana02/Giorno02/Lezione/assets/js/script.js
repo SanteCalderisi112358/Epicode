@@ -13,7 +13,7 @@ Il punto 3 in teoria sono 3 compiti: prednere il valore, dire in che anno siamo 
 Abbiamo teorizzato l'algoritmo che dobbiamo scrivere
 Quando si progetta uno script ci si chiede: che cosa js deve fare all'atto
 del caricamento della pagina (automaticamente) e cosa deve fare a seguito degli eventi
-e quali sono tali eventi. Ci saranno eventi scatenanti delle azioni.
+e quali sono tali eventi. Ci saranno eventi scatenanti delle azioni (eventHandler).
 Così come scritto l'algoritmo js deve aspettare gli input che sono gli eventi scatenanti,
 dunque in partenza non deve fare nulla.
 EVENTO SCATENANTE: click sul button! Tale evento da inizio a tutte l'istruzione ed
@@ -26,13 +26,17 @@ stato (con il quale verifico la maggiore o minore età nel 4.)
 
 */
 
-const btn = document.getElementById('verifica');
+const button = document.getElementById('verifica');
 var eta; //globale perchè valorizzata al calcolo dell'età e usata nella verifica e nella stampa
 var stato; //globale perchè valorizzata in fase di verifica e usata in fase di stampa
 
 //Nel caso ci fosse qualcosa che js debba fare appena apriamo la window, lo scriviamo qui. Poichè non c'è nulla procediamo con l'eventHandler
 
-btn.addEventListener('click', function(){
+
+
+
+button.addEventListener('click', acquisizione);
+function acquisizione() {
     let nome = document.getElementById('nome');
     let anno = document.getElementById('anno');
 
@@ -40,9 +44,7 @@ btn.addEventListener('click', function(){
     verifica();
     scrivi(); //serve per scrivere nell HTML. Saluta se la persona è maggiorenne.
     cancellaForm();
-}
-
-);
+};
 //add....
 //Funzione callback=funzione che viene chiamata, eseguita e che ritorna indietro
 //add... viene chiamata appena la pagina viene caricata perchè rimane in "ascolto"
@@ -65,8 +67,8 @@ function scrivi(nome) {
 
 function cancellaForm(nome, anno){
 
-    nome.value = "";
-    anno.value =""; //cancella i campi. Non posso usare null perchè devo svuotare un elemento in html
+    nome.value = " ";
+    anno.value =" "; //cancella i campi. Non posso usare null perchè devo svuotare un elemento in html
 
 }
 
@@ -74,3 +76,4 @@ function cancellaForm(nome, anno){
 Nel nostro caso levento scatenante è il click.
 Bisona parcellizzare il codice: meglio 300 istruzioni da 2 righe che 1 istruzione da 300 istruzioni
 */
+
