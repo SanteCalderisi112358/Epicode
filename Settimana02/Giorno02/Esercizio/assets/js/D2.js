@@ -24,7 +24,7 @@ document.getElementById('esercizio1').innerHTML = "<h2>Esercizio 01:</h2><p><em>
 document.getElementById('esercizio2').innerHTML = "<h2>Esercizio 02:</h2>"
 
 var name = "Sante";
-document.getElementById('nome').innerHTML = name;
+document.getElementById('nome').innerHTML = "<p>Il mio nome è: "+ name;
 
 
 
@@ -61,8 +61,8 @@ document.getElementById('dodici').innerHTML = x;
 
 document.getElementById('esercizio5').innerHTML = "<h2>Esercizio 05:";
 name = "Calderisi";
-document.getElementById('cognome').innerHTML = "<p>Il mio cognome è:";
-document.getElementById('calderisi').innerHTML = name;
+document.getElementById('cognome').innerHTML = "<p>Il mio cognome è: "+name;
+
 
 //const number1 = 80;
 
