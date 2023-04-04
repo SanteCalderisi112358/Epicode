@@ -89,8 +89,8 @@ document.getElementById('sottrazione').innerHTML = number3 - x;
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 document.getElementById('esercizio7').innerHTML = "<h2>Esercizio 07:";
-name1 = "john";
-name2 = "John";
+var name1 = "john";
+var name2 = "John";
 document.getElementById('nomi').innerHTML = name1+" "+"e"+" "+name2+" "+"sono:";
 
 var verifica = (name1 === name2)? 'uguali' : 'diversi';
