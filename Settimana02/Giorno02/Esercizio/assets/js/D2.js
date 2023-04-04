@@ -96,12 +96,7 @@ document.getElementById('nomi').innerHTML = name1+" "+"e"+" "+name2+" "+"sono:";
 var verifica = (name1 === name2)? 'uguali' : 'diversi';
 document.getElementById('verifica').innerHTML = verifica;
 
-var Name1 = name1.toUpperCase();
-//document.getElementById('Name1').innerHTML = Name1;
-var Name2 = name2.toUpperCase();
-name2 = Name2;
+document.getElementById('extra').innerHTML = name1.toUpperCase()+" "+"e"+" "+name2.toUpperCase()+" "+"sono:"
 
-document.getElementById('extra').innerHTML = Name1+" "+"e"+" "+name2+" "+"ora"+" "+"sono:"
-
-var verifica2 = (Name1 === name2)? 'uguali' : 'diversi';
+var verifica2 = ( name1.toUpperCase() === name2.toUpperCase())? 'uguali' : 'diversi';
 document.getElementById('verifica2').innerHTML = verifica2;
