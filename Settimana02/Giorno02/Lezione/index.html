@@ -7,6 +7,29 @@
     <title>Settimana2_Giorno2_Lezione_LeVariabili</title>
 </head>
 <body>
-    
+    <hr>
+    <div id="container">
+        <h1>Verifica la tua età</h1>
+        <form>
+            <fieldset>
+                <label for="nome">Inserisci il tuo nome</label>
+                <input type="text" name="nome" id="nome"><br>
+                <label for="anno">Inserisci anno di nascita</label>
+                <input type="number" name="anno" id="anno">
+            </fieldset>
+        </form>
+        <br>
+        <button type="button" id="verifica">VERIFICA</button>
+
+    </div>
+
+    <div id="stampa">
+        <h3 id="mioNome">&nbsp;</h3>
+        <h3 id="miaVerifica">&nbsp;</h3>
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
+
+<!--Gli id sono l'unico modo con cui comunichiamo con il form. Non ha method o action.
+Il button è di tipo button e non submit ed è fuori dal form perchè altrimenti andrebbe a ricercare l'action del form-->
