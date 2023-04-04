@@ -7,7 +7,7 @@ REGOLE
 - Per farlo puoi utilizzare il terminale Bash, quello di VSCode o quello del tuo sistema operativo (se utilizzi macOS o Linux)
 */
 
-document.getElementById('title').innerHTML = "<h1>Settimana 01 - Giorno 02</h1>";
+document.getElementById('title').innerHTML = "<h1>Settimana 02 - Giorno 02</h1>";
 
 /* ESERCIZIO 1
  Elenca e descrivi i principali datatype in JavaScript. Prova a spiegarli come se volessi farli comprendere a un bambino.
