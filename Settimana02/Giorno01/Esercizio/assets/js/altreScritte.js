@@ -15,14 +15,14 @@ document.getElementById('Secondo_Testo').innerHTML = Secondo_Testo;
 
 
 
+var criceto = "criceto";
+console.log(criceto);
 
-console.log('criceto');
+var giraffa = "giraffa";
+console.log(giraffa);
 
-
-console.log('giraffa');
-
-
-console.log('leone');
+var leone = "leone";
+console.log(leone);
 
 
 

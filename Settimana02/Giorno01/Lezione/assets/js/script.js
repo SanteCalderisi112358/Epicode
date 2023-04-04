@@ -54,17 +54,20 @@ document.getElementById('numero').innerHTML =numero;
 document.getElementById('somma').innerHTML = numero + 3;
 /* Stampa prima 5 e poi la somma */
 
-var altroTesto = 'numero';
+var altroTesto = 'numero 5';
 document.getElementById('altroTesto').innerHTML = altroTesto;
 function riassegna() {
 
     altroTesto='Ho cambiato il valore della variabile';
+    document.getElementById('altroTesto').innerHTML = altroTesto;
 }
 
-riassegna();
-/*Esempio di una funzione di tipo VOID, cioè OPERATIVO.
-NB RICORDA DI CHIAMARE LA FUNZIONE!!! riga 64*/
 
+
+setTimeout(riassegna, 2000);
+/*la funzione definita come riassegna() è un Esempio di una funzione di tipo VOID, cioè OPERATIVO.
+NB BISOGNA RICORDARSI DI CHIAMARE LA FUNZIONE!!! riga 64*/
+//la funzione setTimeout richiama una funzione dopo N millisecondi
 var nome = 'Andrea';
 if (nome===undefined){
 
