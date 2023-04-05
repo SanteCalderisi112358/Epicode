@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settimana2_Giorno2_Lezione_LeVariabili</title>
 </head>
 <body>
@@ -13,9 +13,9 @@
         <form>
             <fieldset>
                 <label for="nome">Inserisci il tuo nome</label>
-                <input type="text" name="nome" id="nome"><br>
+                <input type="text" nome="nome" id="nome"><br>
                 <label for="anno">Inserisci anno di nascita</label>
-                <input type="number" name="anno" id="anno">
+                <input type="number" nome="anno" id="anno">
             </fieldset>
         </form>
         <br>
@@ -27,9 +27,9 @@
         <h3 id="mioNome">&nbsp;</h3>
         <h3 id="miaVerifica">&nbsp;</h3>
     </div>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script_prova.js"></script>
 </body>
 </html>
 
-<!--Gli id sono l'unico modo con cui comunichiamo con il form. Non ha method o action.
-Il button è di tipo button e non submit ed è fuori dal form perchè altrimenti andrebbe a ricercare l'action del form-->
+<!--Gli id sono l'unico modo con cui comunichiamo con il form. Non ha method o action perchè sono interamente gestiti da js.
+Il button è di tipo button e non submit ed è fuori dal form perchè altrimenti andrebbe a ricercare l'action del form. Quando invece c'è js dietro è lui a decidere cosa fare il button.Per evitare comportamenti imprevisti del button quando facciamo click, una delle possibili tecniche è quella di metterlo fuori dal form, come se ne fossero indipendenti e cercando di rispettare la struttura. IL BUTTON DENTRO AL FORM NE CERCA L'ACTION -->

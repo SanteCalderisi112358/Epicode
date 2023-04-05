@@ -12,7 +12,7 @@ function callBack() {
     acquisizione();
     calcoloEta(anno.value);
     verificaMaggioreEta();
-    stampa();
+    stampa(nome);
     cancellaDati();
 }
 
