@@ -41,7 +41,7 @@ btn.addEventListener('click', callBack );
 function callBack() {
     let name = document.getElementById('name');
     let anno = document.getElementById('anno');
-
+    console.log(anno);
     calcolaEta(anno.value);//questa funzione ha bisogno del valore anno, quindi anno.value. Quindi legge il valore del campo anno (anno.value), lo passa alla funzione calcolaEta e valorizza la variabile eta, con questo valore poi valorizza la variabile stato con un operatore ternario nella funzione verifica()
     verifica();//questa funzione non ha bisogno di parametri
     scrivi(); //serve per scrivere nell HTML. Saluta se la persona è maggiorenne.

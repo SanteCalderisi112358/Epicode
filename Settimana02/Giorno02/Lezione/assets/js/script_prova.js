@@ -10,7 +10,7 @@ btn.addEventListener('click', callBack);
 function callBack() {
 
     acquisizione();
-    calcoloEta(anno.value);
+    calcoloEta(anno);
     verificaMaggioreEta();
     stampa(nome);
     cancellaDati();
@@ -18,8 +18,10 @@ function callBack() {
 
 function acquisizione(){
 
-    nome = document.getElementById('nome');
-    anno = document.getElementById('anno');
+    nome = document.getElementById('nome').value;
+    //nome = nomeInput.value
+    anno = document.getElementById('anno').value;
+    //anno = annoInput.value
 }
 
 function calcoloEta (anno){
