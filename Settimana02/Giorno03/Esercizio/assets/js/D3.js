@@ -196,12 +196,12 @@ else if((number2>number3)&&(number3>number1)&&(number3>number1)){
 
 {
 
-  let valore = 6;
-  typeof valore;
-  if (valore === "number"){
+  let valore = "Ciao";
+
+  if (typeof valore === "number"){
   console.log('Il dato è un numero');
 
-  }else if (valore ==="string"){
+  }else if (typeof valore ==="string"){
     console.log('Il dato è una stringa');
   }
   
@@ -265,7 +265,7 @@ console.log(me);
 
 
 
-me.splice(1,1) = me;
+me.lastName = '';
 console.log(me);
 
 
@@ -275,12 +275,19 @@ console.log(me);
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
+me.skills.pop();
+console.log(me.skills);
+
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
+var array = [];
+array.push(1,2,3,4,5,6,7,8,9,10);
+console.log(array);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 15
@@ -288,3 +295,26 @@ console.log(me);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
+array.splice(9,1,100);
+console.log(array);
+
+array.shift(1);
+console.log(array);
+
+
+lunghezza = array.unshift('Marco');
+console.log(array);
+console.log(lunghezza);
+
+
+
+newArray=array.slice(0,3);
+console.log(array);
+console.log(newArray);
+
+
+
+
+console.log(array);
