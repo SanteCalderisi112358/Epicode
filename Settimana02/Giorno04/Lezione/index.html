@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatore</title>
+</head>
+<body>
+    <h1>Settimana02 - Giorno04 - Switch, While, For</h1>
+    <h2>Calcolatore</h2> 
+    
+    <form action="">
+        <fieldset>
+            <label for="numero1">Primo numero</label>
+            <input type="number" name="numero1" id="numero1">
+            <label for="numero2">Secondo numero</label>
+            <input type="number" name="numero2" id="numero2">
+            <h3>Seleziona operazione</h3>
+            <select name="" id="operazione">
+                <option value="" selected></option> <!--selected è la selezione di cortesia per non far trovare vuoto. L'elemento che lavora è il select che prende il value della selezione. Il valore che verrà intercettato sarà add. o sottr, o molt o div-->
+                <option value="add">Addiziona</option>
+                <option value="sottr">Sottrazione</option>
+                <option value="molt">Moltiplicazione</option>
+                <option value="div">Divisione</option>
+            </select>
+            <button type="button" id="calcola">CALCOLA</button>
+            <button type="reset" id="resert">RESERT</button>
+        </fieldset>
+    </form>
+    <h3 id="risultato"></h3>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

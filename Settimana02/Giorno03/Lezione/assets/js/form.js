@@ -26,11 +26,11 @@ function controlla() {
 	} else if (mioCognome == '') {
 		alert('Inserire il cognome utente')
 		return false;
-	}  if(annoUtente == ''){
+	}  else if(annoUtente == ''){
         alert('Inserire anno di nascita')
 		return true;
 	}
-}
+
 
 function conferma() {
     
@@ -40,4 +40,5 @@ function conferma() {
     nomeUtente.value = '';
     cognomeUtente.value = '';
     annoUtente.value ='';
+}
 }
