@@ -1,0 +1,122 @@
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #EAEDED;
+
+}
+
+/*Header*/
+header {
+
+    background-color: #222F3E;
+}
+
+nav  {
+    background-color: #364759;
+    text-align: left;
+    font-size: 10px;
+    padding: 3px 10px;
+}
+
+#logoHeader {
+
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #222F3E;
+}
+
+/*Main*/
+
+main {
+
+    margin: 0 auto;
+    
+   
+
+}
+
+main p {
+
+    background-color: #F56600;
+    font-size: 0.5em;
+    padding: 2px 0;
+    text-align: center;
+}
+
+#central {
+
+    padding: 0 20px;
+   
+}
+
+#title {
+
+    background-image: url('../img/bg-image.png');
+    
+    font-size: 0.6em;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.pictureTop {
+
+    width: 20vw;
+    border-radius: 10%;
+    
+}
+
+aside {
+
+    background-color: #FFFFFF;
+    margin: 20px 0;
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+.pictureCentral h3{
+    text-align: center;
+    margin-top: 0;
+}
+.pictureCentral img {
+    width: 100%;
+    
+}
+
+.titleLittle{
+    color: black;
+    text-align: left;
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+    
+}
+.titleLittle span {
+    color: #68ACBA;
+    font-size: 1em;
+    padding-left: 0.5em;
+
+}
+
+
+
+footer {
+    background-color: #222F3E;
+    text-align: center;
+}
+footer p {
+    
+    background-color: #364759;
+    padding: 1.2em;
+    
+}
+
+footer a {
+    color: white;
+}
+footer img {
+    width: 90px;
+    padding: 20px;
+}
