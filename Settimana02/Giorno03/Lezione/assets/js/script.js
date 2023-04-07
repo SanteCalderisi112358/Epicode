@@ -54,3 +54,7 @@ const docente = {
       return this.nome[0] + ' ' + this.cognome + ', età: ' + this.eta() + ', attualmente occupato: ' + this.occupato;
     }
   }
+  var numero = 2;
+  console.log(docente.nome);
+  console.log(docente.nome[0]);
+  document.getElementById('prove').innerHTML = numero;
