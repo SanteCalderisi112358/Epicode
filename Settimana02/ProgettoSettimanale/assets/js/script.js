@@ -178,7 +178,9 @@ while(index<position){
     es. [f, b, e] --> [6, 2, 5]
 */
 
-const charactersArray = ['g', 'n', 'u', 'z', 'd'];
+
+const charactersArray = ['s','a','n','t','e']
+//const charactersArray = ['g', 'n', 'u', 'z', 'd'];
 console.log('Esercizio 9:\nArray di lettere: ')
 console.log(charactersArray);
 const numberArray = [];
@@ -255,5 +257,5 @@ for(let i=0; i<charactersArray.length; i++){
     
 }
 
-console.log("L'array è: ");
+console.log("L'array dei numeri corrispondenti è: ");
 console.log(numberArray);
