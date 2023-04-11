@@ -10,8 +10,32 @@ REGOLE
 /* ESERCIZIO 1
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato..
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+{
+
+    const btn1 = document.getElementById('button1es1');
+
+    btn1.addEventListener('click', function () {
+        let input1 = document.getElementById('input1es1').value;//   Acquisizione
+        let input2 = document.getElementById('input2es1').value;//   Dati
+        let l1 = Number(input1);//   Trasformazione da stringhe
+        let l2 = Number(input2);//   a numeri
+
+        area(l1, l2);//Chiamata funzione "area" con i parametri di cui ha bisogno
+        document.getElementById('risultato1').innerHTML = `L'area del rettangolo di lati ${l1} e ${l2} è ${area(l1, l2)}`;//Stampa
+
+    })
+    function area(l1, l2) {//Definizione funzione area
+        return l1 * l2 ;//
+    }
+}
+
+
+
+
+
+
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -20,6 +44,12 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+{
+    
+}
+
+
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
