@@ -279,7 +279,29 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+{
+    const btn9 = document.getElementById('button1es9');
+    
+    var stringa9finale = [];
+    btn9.addEventListener('click', function cutString(){
+        let stringa9 = document.getElementById('input1es9').value;
+        
 
+        for(let i=0;i<stringa9.length;i++){
+            
+            stringa9finale[i] = stringa9[i].slice(1, stringa9.length-1);
+            
+        }
+    })
+
+    for(let i=0;i<stringa9.length;i++){
+            
+        
+        document.getElementById('risultato9').innerHTML += stringa9finale[i];
+
+
+    }
+}
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
