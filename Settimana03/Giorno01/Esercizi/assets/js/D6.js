@@ -9,10 +9,10 @@ REGOLE
 
 /* ESERCIZIO 1
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato..
-*/
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-{
+
 
     const btn1 = document.getElementById('button1es1');
 
@@ -36,9 +36,8 @@ REGOLE
         //area(l1, l2);//Chiamata funzione "area" con i parametri di cui ha bisogno
        document.getElementById('risultato1').innerHTML = `L'area del rettangolo di lati ${l1} e ${l2} è ${area(l1, l2)}`
 
-    })*/
+    })
 }
-
 
 
 
@@ -280,27 +279,14 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 {
-    const btn9 = document.getElementById('button1es9');
     
-    var stringa9finale = [];
-    var stringa9parole = [];
-    btn9.addEventListener('click', function cutString(){
-        let stringa9 = document.getElementById('input1es9').value;
-        stringa9parole = stringa9.split(" ");
+    console.log('Esercizio 9: ');
+    let mioArray = 'Precipitevolissimevolmente';
+    const cutString = (array) =>{
+        return mioArray.slice(1,mioArray.length-1)
 
-        for(let i=0;i<stringa9parole.length;i++){
-            
-            
-            let stringa9SenzaInizio=stringa9parole[i].slice(1);
-            let stringa9SenzaFine=stringa9parole[i].slice(stringa9parole[i].length-1);
-            
-        }
-    })
-
-    
-            
-        
-        document.getElementById('risultato9').innerHTML += stringa9finale[0];
+    }
+    console.log(cutString(mioArray));
 
 
     
@@ -310,3 +296,11 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const giveMeRandom = (n) =>{
+    let string = [];
+    for(i=0;i<n;i++){
+        string.push(Math.floor(Math.random()*11));
+    }return string;
+}
+console.log(giveMeRandom(20));
