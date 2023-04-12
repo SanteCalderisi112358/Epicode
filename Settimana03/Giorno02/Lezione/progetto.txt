@@ -1,0 +1,6 @@
+PROCEDURA DI LOGIN CON BLOCCO DELLA PAGINA RISERVATA(rotta).
+Rotta inteso come "rotta marina"=indirizzare una pagina verso una "rotta" rispetto ad unìaltra.
+
+Cosa mi serve?(descrizione della procedura)
+Nella pagina di login l'utente deve inserire un valore in un campo input che viene memorizzato dal browser (localStorage) e utilizzato in una altra pagina che rappresenta la nostra area riservata per salutare l'utente.
+Se l'utente non inserisce valori e clicca sul button ENTRA oppure scrive nella barre degli indirizzi il nome della pagina dell'area riservata (es. http://www.pippo.com/reserved.html), l'applicazione deve intercettare l'assenza del valore richiesto e indirizzare l'utente verso una pagina di errore.
