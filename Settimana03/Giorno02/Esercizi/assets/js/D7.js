@@ -2,35 +2,158 @@
   Scrivi una funzione per concatenare due stringhe ricevute come parametri, selezionando solamente i primi 2 caratteri della
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
+{
 
+  console.log('Esercizio 1: ');
+  var stringa1 = 'sante';
+  var stringa2 = 'pluto';
+
+  finalString1 = (stringa1, stringa2) => {
+    var pezzoStringa1 = stringa1.slice(0, 2);
+    var lunghezzaStringa2 = stringa2.length;
+    var pezzoStringa2 = stringa2.slice(lunghezzaStringa2 - 3, lunghezzaStringa2);
+    var pezzoStringa1M = pezzoStringa1.toUpperCase();
+    var pezzoStringa2M = pezzoStringa2.toUpperCase();
+    return pezzoStringa1M.concat(pezzoStringa2M);
+
+  }
+  console.log(finalString1(stringa1, stringa2));
+
+
+}
 /* ESERCIZIO 2
-  Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
+  Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso). EXTRA:Fare in modo che non ci siano valori ripetuti
 */
+{
+  console.log('Esercizio 2: ');
+
+  var array2 = [];
+  function finalString2() {
+
+
+    for (i = 0; i < 10; i++) {
+      array2[i] = Math.floor(Math.random() * 101);
+
+    }
+    return array2;
+  }
+  console.log(finalString2());
+}
 
 /* ESERCIZIO 3
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici (suggerimento: il metodo filter può aiutare)
 */
+{
+  console.log('Esercizio 3: ');
+  var string3 = [1, 2, 4, 5, 76, 8, 9];
+
+  string3.filter(string3pari);
+
+  function string3pari(valore) {
+
+    if (valore % 2 === 0) {
+
+      return valore;
+    }
+  }
+
+  console.log(string3.filter(string3pari));
+}
+
+
+
+
 
 /* ESERCIZIO 4
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+{
+  console.log('Esercizio 4: ');
 
+  var string4 = [3, 2, 4, 6, 7];
+  var somma = 0;
+  
+  
+    string4.forEach(element => {
+      somma += element;
+      return somma;
+  
+    }
+    
+    )
+     console.log(somma);
+  
+    
+  
+  
+}
 /* ESERCIZIO 5
   Scrivi una funzione per sommare i numeri contenuti in un array (usare REDUCE)
 */
-
+{
+  console.log('Esercizio 5: ');
+  var string5 = [2,4,5,6];
+  var somma = string5.reduce(somma5);
+  function somma5(totale, valore){
+    return totale + valore;
+  }
+  console.log(string5);
+  console.log(somma);
+}
 /* ESERCIZIO 6
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
+
+console.log('Esercizio 6: ');
+var array6 = [24,33,47,555,67];
+var array6stampa = [];
+var m = 10;
+function funzione(string6,n){
+      for(i=0;i<string6.length;i++){
+        array6stampa[i] = string6[i]+n;
+      }
+      return array6stampa;
+}
+console.log(array6);
+console.log(funzione(array6,m));
+
 
 /* ESERCIZIO 8
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+{
+  console.log('Esercizio 8: ');
+  array8 = ['Sante', 'Calderisi'];
+  string8number = [];
 
+  function funzione8(string8){
+    for(i=0; i<string8.length; i++){
+     string8number[i]=string8[i].length;
+      
+    }
+    return string8number;
+  }
+  console.log(funzione8(array8));
+}
 /* ESERCIZIO 9
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+
+console.log('Esercizio 9: ');
+var n;
+var numeriDispari = [];
+var funzione9 = function(n){
+      for(i=0; i<n; i++){
+        let a = (Math.floor(Math.random)*101);
+       if(a%2!==0) {
+          numeriDispari[i] = a;
+        }
+      }return numeriDispari;
+}
+console.log(funzione9(n));
+
+
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
