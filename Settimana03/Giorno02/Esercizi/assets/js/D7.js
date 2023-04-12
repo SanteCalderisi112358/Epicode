@@ -5,19 +5,16 @@
 {
 
   console.log('Esercizio 1: ');
-  var stringa1 = 'sante';
-  var stringa2 = 'pluto';
-
-  finalString1 = (stringa1, stringa2) => {
-    var pezzoStringa1 = stringa1.slice(0, 2);
-    var lunghezzaStringa2 = stringa2.length;
-    var pezzoStringa2 = stringa2.slice(lunghezzaStringa2 - 3, lunghezzaStringa2);
-    var pezzoStringa1M = pezzoStringa1.toUpperCase();
-    var pezzoStringa2M = pezzoStringa2.toUpperCase();
-    return pezzoStringa1M.concat(pezzoStringa2M);
+  var array1 = 'calderisi';
+  var array2 = 'pluto';
+ funzione1 = (stringa1, stringa2) => {
+    
+   
+  let finalString1 = stringa1.slice(0, 2).concat(stringa2.slice(stringa2.length - 3));
+    return finalString1;
 
   }
-  console.log(finalString1(stringa1, stringa2));
+  console.log(funzione1(array1, array2));
 
 
 }
@@ -28,7 +25,7 @@
   console.log('Esercizio 2: ');
 
   var array2 = [];
-  function finalString2() {
+   finalString2 = () => {
 
 
     for (i = 0; i < 10; i++) {
@@ -141,17 +138,21 @@ console.log(funzione(array6,m));
 */
 
 console.log('Esercizio 9: ');
-var n;
-var numeriDispari = [];
-var funzione9 = function(n){
-      for(i=0; i<n; i++){
-        let a = (Math.floor(Math.random)*101);
-       if(a%2!==0) {
-          numeriDispari[i] = a;
+
+
+const funzione9 = () =>{
+     const numeriDispari = []; 
+  
+  for(let i=0; i<100; i++){
+        if(i%2!=0){
+          numeriDispari.push(i);
         }
+        
+          
+        
       }return numeriDispari;
 }
-console.log(funzione9(n));
+console.log(funzione9());
 
 
 
@@ -269,23 +270,74 @@ const movies = [
 /* ESERCIZIO 10
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
-
+console.log('Esercizio 10: ');
+const funzione10 = (array) => {
+  let years =[];
+  for(i=0; i<array.length;i++){
+    
+    years.push(Number(array[i].Year));
+  } let maxYear = Math.min(...years);
+  return maxYear;
+  
+}
+console.log(funzione10(movies));
 /* ESERCIZIO 11
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
-
+console.log('Esercizio 11: ');
+funzione11 = (array) =>{
+   return array.length; 
+}
+console.log(funzione11(movies));
 /* ESERCIZIO 12
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
-
+console.log('Esercizio 12: ');
+funzione12 = (array) =>{
+  let titleMovies = [];
+  for(let i=0; i<array.length;i++){
+    titleMovies.push(array[i].Title);
+  }return titleMovies;
+}
+console.log(funzione12(movies));
 /* ESERCIZIO 13
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
+console.log('Esercizio 13: ');
+funzione13 = (array) =>{
+  let millenialsMovies = [];
+  for(i=0;i<array.length;i++){
+    if(Number(array[i].Year>2000)){
+      millenialsMovies.push(array[i].Title);
+    }
+  }return millenialsMovies;
+}
 
+console.log(funzione13(movies));
 /* ESERCIZIO 14
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
+console.log('Esercizio 14: ');
+funzione14 = (array, imdbID) =>{
+    for(i=0;i<array.length;i++){
+      if(imdbID===array[i].imdbID){
+        
+        movie = array[i].Title;
+      }
+    }
+  return movie;
+}
 
+console.log(funzione14(movies,"tt2395427"));
 /* ESERCIZIO 15
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+
+console.log('Esercizio 15: ');
+funzione15 = (array) =>{
+  let totalYears = 0;
+  for(i=0;i<array.length;i++){
+    totalYears += Number(array[i].Year);
+  }return totalYears;
+}
+console.log(funzione15(movies));
