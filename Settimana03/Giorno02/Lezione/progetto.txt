@@ -4,3 +4,28 @@ Rotta inteso come "rotta marina"=indirizzare una pagina verso una "rotta" rispet
 Cosa mi serve?(descrizione della procedura)
 Nella pagina di login l'utente deve inserire un valore in un campo input che viene memorizzato dal browser (localStorage) e utilizzato in una altra pagina che rappresenta la nostra area riservata per salutare l'utente.
 Se l'utente non inserisce valori e clicca sul button ENTRA oppure scrive nella barre degli indirizzi il nome della pagina dell'area riservata (es. http://www.pippo.com/reserved.html), l'applicazione deve intercettare l'assenza del valore richiesto e indirizzare l'utente verso una pagina di errore.
+
+PROGETTAZIONE DI MASSIMA
+In html ho bisogno di:
+
+1. index(login)
+2. pagina2(todo)
+3. errore
+
+In js abbiamo bisogno:
+
+1. index (pagina principale che deve intercettare il click del button)
+2. area riservata (la pagina2, cioè il todo) che mi dice che sono entrato nella mia area RISERVATA
+
+PROGETTAZIONE INDEX:
+1. campo input per il nome
+2. Button per passare alla pagina riservata(leggere il valore del campo input e memorizzarlo)
+2a. il button deve leggere il valore, scriverlo (localStorage), passare alla pagina successiva
+
+PROGETTAZIONE PAGINA RISERVATA (PAGINA 2):
+1. Elemento html per scrivere il nome utente
+2. Controllo sull'esistenza di un nome utente (localStorage) ed eventuale reindirizzamento alla pagina di errore se il nome utente non c'è
+3. Elemento che consenta l'uscita dall'area riservata (logout) ELIMINANDO I DATI PRESENTI!
+
+PROGETTAZIONE PAGINA ERRORE:
+1. Messaggio di errore e un link per tornare al login
