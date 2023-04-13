@@ -29,3 +29,17 @@ PROGETTAZIONE PAGINA RISERVATA (PAGINA 2):
 
 PROGETTAZIONE PAGINA ERRORE:
 1. Messaggio di errore e un link per tornare al login
+
+
+TodoList
+Creare un elenco di cosa da fare che possa essere aggiornata con l'aggiunta di nuovi elementi e l'eliminazione di elementi completati.
+
+HTML
+1. Campo di input per scrivere i nuovi task con un button per inserirli nella lista
+2. la lista dei task con il button per l'eliminazione dei singoli task
+
+JS
+1. Al click deve leggere il campo di imput
+2. Memorizzare il valore
+3. Aggiungere il nuovo task alla lista già esistente con il corrispondente button per l'eliminazione
+4. Consentire l'eliminazione di una voce (task) al click sul suo button di eliminazione
