@@ -644,7 +644,7 @@ function function25() {
 
 
 }
-//function25();
+function25();
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
@@ -701,11 +701,11 @@ function tree(altezza) {
 let ramo = "";
 for (let i = 1; i <= altezza; i++) {
   
-  for (let j = 1; j <= i ; j++) {
+  for (let j = 1; j <= altezza-i ; j++) {
     ramo += " ";
   }
   
-  for (let k = 0; k < i ; k++) {
+  for (let k = 0; k < i*2-1 ; k++) {
     ramo += "*";
   }
   ramo += "\n";
@@ -750,4 +750,4 @@ function function29(n) {
 
 
 }
-console.log(function29(31));
+console.log(function29(17));
