@@ -743,11 +743,11 @@ function function29(n) {
     default:
       if ((n % 2 === 0) || (n % 3 === 0) || (n % 5 === 0) || (n % 7 === 0)) {
         return `${n} non è un numero primo`;
-      } else if ((n % 1 === 0) && (n % n === 0)) {
+      } else if ((n % 1 === 0) && (n % n === 0)){
         return `${n} è un numero primo`;
       }
   }
 
 
 }
-console.log(function29(17));
+console.log(function29(33));
