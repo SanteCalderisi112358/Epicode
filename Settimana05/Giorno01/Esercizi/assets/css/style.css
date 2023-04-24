@@ -277,6 +277,13 @@ header p{
 article h2{
     font-weight: bold;
 }
+
+iframe, section{
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    margin-inline: -2px;
+}
 }
 
 
