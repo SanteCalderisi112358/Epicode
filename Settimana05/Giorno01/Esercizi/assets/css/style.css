@@ -262,18 +262,33 @@ table{
 
 @media screen and (min-width: 1200px){
 
-header div, header div p, header nav {
-    text-align: left;
+header div, header div img, header div p, header nav{
+    
     display: inline-block;
+    
    
 }
+header div p{
+    vertical-align: middle;
+}
 
+header img{
+    width: 30%;
+    margin: 0 auto;
+}
 
+header div{
+    text-align: none;
+}
+header nav{
+    padding-left: 500px;
+    vertical-align: middle;
+}
 
-
-
-
-
+table{
+    margin-bottom: 100px;
+    width: 80%;
+}
 article h2{
     font-weight: bold;
 }
