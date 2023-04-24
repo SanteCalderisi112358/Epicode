@@ -262,6 +262,10 @@ table{
 
 @media screen and (min-width: 1200px){
 
+header{
+    padding: 0;
+}
+
 header div, header div img, header div p, header nav{
     
     display: inline-block;
@@ -270,11 +274,15 @@ header div, header div img, header div p, header nav{
 }
 header div p{
     vertical-align: middle;
+    margin-left: 40px;
+    margin-bottom: 0;
 }
 
 header img{
     width: 30%;
-    margin: 0 auto;
+    margin-bottom: 0;
+    vertical-align: middle;
+  
 }
 
 header div{
