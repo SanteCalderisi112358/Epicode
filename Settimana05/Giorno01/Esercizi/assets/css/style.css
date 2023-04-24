@@ -262,15 +262,15 @@ table{
 
 @media screen and (min-width: 1200px){
 
-header div {
+header div, header div p, header nav {
     text-align: left;
-    display: table-cell;
+    display: inline-block;
    
 }
 
-header p{
-    display: inline;
-}
+
+
+
 
 
 
@@ -282,6 +282,16 @@ iframe, section{
     display: inline-block;
     width: 50%;
     vertical-align: middle;
+    margin-inline: -2px;
+}
+
+section{
+    border-radius: 20px;
+}
+
+.article{
+    display: inline-block;
+    width: 33.333%;
     margin-inline: -2px;
 }
 }
