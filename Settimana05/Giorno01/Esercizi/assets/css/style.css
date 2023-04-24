@@ -80,6 +80,8 @@ h1 + p {
 ul, ol {
     margin-left: 2em;
 }
+
+
 a {
     color: #00A0C6;
     font-weight: bold;
@@ -99,6 +101,18 @@ iframe {
     margin-bottom: 2em;
     border-radius: 20px;
 }
+
+/*Logo JS*/
+#logoJS{
+    width: 60px;
+    border: 3px solid rgb(28, 213, 230);
+    outline: 2px solid purple;
+    outline-offset: 0.5px;
+    padding: 3px;
+    
+}
+
+
 
 /* TABELLE */
 table {
@@ -178,3 +192,68 @@ footer {
 footer a {
     color: fuchsia;
 }
+
+
+@media screen and (min-width: 576px){
+    /*Ul nav inline*/
+nav ul li{
+    display: inline;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+address, ul, ol, dl, blockquote {
+    font-size: 1.2em;
+}
+
+article ol li, article ul li{
+    font-size: 1.2em;
+}
+
+article p{
+    font-size: 1.2em;
+}
+
+section h2{
+    background-color: gray;
+}
+
+aside h2{
+    font-size: 2.5em;
+}
+
+.article a, .article p, aside div p:last-child{
+    font-size: larger;
+}
+
+footer p, footer address{
+    font-size: 1.9em;
+}
+
+}
+
+@media screen and (min-width: 768px){
+h1{
+    font-size: 5em;
+    }
+
+footer p, footer address{
+        font-size: 1.7em;
+    }
+aside div p:last-child{
+    font-size: smaller;
+}
+
+table{
+    margin: auto;
+    margin-bottom: 6em;
+    
+}
+}
+    
