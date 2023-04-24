@@ -240,9 +240,12 @@ footer p, footer address{
 
 @media screen and (min-width: 768px){
 h1{
-    font-size: 5em;
+    padding-right: 2em;
+    font-size: 4em;
     }
-
+article{
+    padding-right: 1.5em;
+}
 footer p, footer address{
         font-size: 1.7em;
     }
@@ -256,4 +259,26 @@ table{
     
 }
 }
+
+@media screen and (min-width: 1200px){
+
+header div {
+    text-align: left;
+    display: table-cell;
+   
+}
+
+header p{
+    display: inline;
+}
+
+
+
+article h2{
+    font-weight: bold;
+}
+}
+
+
+
     
