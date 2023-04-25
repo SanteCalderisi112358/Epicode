@@ -65,6 +65,10 @@ section h2 {
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
+#principaleTitle{
+    display: none;
+}
+
 h1 {
     font-size: 2.6rem;
     font-weight: bold;
@@ -196,6 +200,7 @@ footer a {
 
 @media screen and (min-width: 576px){
     /*Ul nav inline*/
+
 nav ul li{
     display: inline;
 }
@@ -261,7 +266,10 @@ table{
 }
 
 @media screen and (min-width: 1200px){
-
+header, main, footer{
+    width: 1200px;
+    margin: auto;
+}
 header{
     padding: 0;
 }
@@ -319,6 +327,27 @@ section{
 }
 }
 
+@media print{
+    body{
+        margin:0;
+        font-family: 'Times New Roman', Times, serif; /*Font consigliato per la stampa*/
+        background-color: none;
+    }
+    #principaleTitle{
+        display: block;
+        font-weight: bold;
+        text-align: center;
+    }
+    main{
+        box-shadow: none;
+    }
+    header, footer, iframe, section, aside{
+        display: none;
+    }
 
+    thead{
+        background-color: none;
+    }
+}
 
     
