@@ -182,7 +182,9 @@ aside div p:last-child {
     text-align: right;
 }
 
-
+#sitoPDF{
+    display: none;
+}
 /* FOOTER */
 footer {
     background: rgb(53,53,53);
@@ -268,7 +270,8 @@ table{
 @media screen and (min-width: 1200px){
 header, main, footer{
     width: 1200px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 header{
     padding: 0;
@@ -286,7 +289,7 @@ header div p{
     margin-bottom: 0;
 }
 
-header img{
+header div img{
     width: 30%;
     margin-bottom: 0;
     vertical-align: middle;
@@ -329,6 +332,7 @@ section{
 
 @media print{
     body{
+        font-size: 24px;
         margin:0;
         font-family: 'Times New Roman', Times, serif; /*Font consigliato per la stampa*/
         background-color: none;
@@ -338,15 +342,30 @@ section{
         font-weight: bold;
         text-align: center;
     }
+
+    h1{
+        font-size: 50px;
+    }
+    .fas {
+        display: none;
+    }
     main{
         box-shadow: none;
     }
-    header, footer, iframe, section, aside{
+    header, footer, aside, iframe, section{
         display: none;
     }
 
     thead{
         background-color: none;
+    }
+
+    #linkPerSito{
+        display: none;
+    }
+
+    #sitoPDF{
+        display: block;
     }
 }
 
