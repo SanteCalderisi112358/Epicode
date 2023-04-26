@@ -265,6 +265,14 @@ table{
     margin-bottom: 6em;
     
 }
+input{
+    width: 80%;
+    height: 20%;
+    padding: 10px;
+}
+button {
+    padding: 10px 20px;
+}
 }
 
 @media screen and (min-width: 1200px){
@@ -315,19 +323,33 @@ article h2{
 iframe, section{
     display: inline-block;
     width: 50%;
+    height: 300px;
     vertical-align: middle;
     margin-inline: -2px;
 }
 
 section{
     border-radius: 20px;
+    padding-top: 3em;
 }
 
+section p{
+    margin-bottom: 2em;
+    font-size: 25px;
+}
+
+section h2{
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
 .article{
     display: inline-block;
     width: 33.333%;
     margin-inline: -2px;
 }
+
+
+
 }
 
 @media print{
