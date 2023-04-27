@@ -1,0 +1,134 @@
+html,
+body{
+    margin: 0 auto;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+body{
+    background-color: #666666;
+}
+
+.postit{
+    padding: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+.post-it{
+    width: 200px;
+    height: 180px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 2px 0px rgb(31, 31, 31);
+    transition: all 1s ease;
+    margin-bottom: 10px;
+    
+    
+    
+    
+}
+
+h2{
+    font-size: 40px;
+    font-weight: bolder;
+    
+}
+
+p{
+    font-size: 30px;
+}
+
+#post-it1{
+    background: linear-gradient(0deg, #C0C1A2, #FDFDCB);
+    rotate: 10deg;
+    animation: intro3 2s ease-out 0.3s;
+}
+
+#post-it2{
+    background: linear-gradient(0deg, #9EB6A0, #CCFECD);
+    rotate: -10deg;
+    animation: intro2 1.5s ease-in 500ms;
+    
+}
+
+#post-it3{
+    background: linear-gradient(0deg, #8A8C9B, #8A8C9B);
+    rotate: -10deg;
+    animation: intro1 1.5s linear 1;
+}
+
+#post-it4{
+    background: linear-gradient(0deg, #9EB6A0, #CCFECD);
+    rotate: 10deg;
+    animation: intro3 1.5s linear 200ms;
+}
+
+#post-it5{
+    background: linear-gradient(0deg, #C0C1A2, #FDFDCB);
+    rotate: -10deg;
+    animation: intro3 2s linear 300ms;
+}
+
+#post-it6{
+    background: linear-gradient(0deg, #8A8C9B, #8A8C9B);
+    rotate: 10deg;
+    animation: intro1 2s linear 1;
+}
+
+#post-it7{
+    background: linear-gradient(0deg, #C0C1A2, #FDFDCB);
+    rotate: 10deg;
+    animation: intro2 1.3s ease;
+   
+}
+
+#post-it8{
+    background: linear-gradient(0deg, #9EB6A0, #CCFECD);
+    rotate: -10deg;
+    animation: intro1 1s linear 1;
+   
+}
+
+@keyframes intro1{
+    0%{
+        transform: translate(-200%, 400%) rotate(-3289deg);
+    }
+
+    100%{
+        transform: translate(0%,0%);
+    }
+}
+
+@keyframes intro2{
+    0%{
+        transform: translate(400%, -200%) rotate(4003deg)
+    }
+
+    100%{
+        transform: translate(0%,0%) rotate(0deg);
+    }
+}
+
+@keyframes intro3{
+    0%{
+        transform: translate(-280%, 570%) rotate(-4302deg);
+    }
+    100%{
+        transform: translate(0%,0%) rotate(0deg);
+    }
+}
+
+.post-it:hover{
+    transform: scale(1.5) rotate(30deg);
+    box-shadow: 25px 11px 2px 0px rgb(31, 31, 31, 0.5);
+    z-index: 1;
+
+   
+}
