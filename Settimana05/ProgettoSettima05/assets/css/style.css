@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Header*/
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffc017;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid black;
+    z-index: 100;
+    
+}
+
+header div{
+    display: flex;
+    height: 75px;
+    justify-content: space-between;
+    flex: 1;
+
+}
+
+header div img{
+    height: 25px;
+    margin-left: 50px;
+    margin-top: 25px;
+    
+}
+header div ul{
+    margin-left: 45%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+header div button{
+    background: rgba(25, 25, 25, 1);
+    border-radius: 20px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    
+}
+
+/*Main*/
+
+#hero{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+    padding-bottom: 50px;
+}
+
+.text{
+    flex: 1 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+    z-index: 10;
+    height: 100%;
+}
+
+.text h1{
+    font-size: 87px;
+    margin-bottom: 30px;
+    font-family: 'Spectral', serif;
+    line-height: 108px;
+    letter-spacing: -0.05em;
+    font-weight: 400;
+}
+
+.text p{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 50px;
+    
+}
+
+.text button{
+    font-size: 20px;
+    width: 213px;    
+    background: rgba(25, 25, 25, 1);
+    border-radius: 20px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    padding: 7px 20px 9px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.trend{
+    display: flex;
+    margin: 50px;
+    margin-bottom: 10px;
+}
+
+.trend img{
+    margin-left: 20px;
+}
+
+/*Section Cards*/
+
+.card{
+    margin-left: 20px;
+    margin-right: 80px;
+    display: flex;
+    width: 20%;
+    transition: all 500ms linear;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 2px 2px 2px 2px grey;
+    
+}
+
+div.card>p{
+    padding: 0;
+    color: rgba(230, 230, 230, 1);
+    line-height: 38px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.name{
+    margin-left: 20px;
+}
+
+.name p{
+    font-size: 13px;
+}
+.name h2{
+    font-size: 16px;
+    margin: 0;
+    margin-top: 5px;
+}
+.nameAndImg{
+    display: flex;
+    padding-top: 30px;
+}
+
+.nameAndImg p{
+    padding-right: 2px;
+    margin: 0;
+    margin-top: 3px;
+    font-weight: 500;
+    color: rgba(41, 41, 41, 1);
+    cursor: pointer;
+}
+
+
+.nameAndImg img{
+    width: 20px;
+    height: 20px;
+   border-radius: 50%;
+}
+
+.section-cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid rgba(41, 41, 41, 1);
+    
+}
+
+/*Section Bottom*/
+
+.bottom{
+    display: flex;
+    
+}
+
+.left{
+    padding-left: 100px;
+}
+.card-buttom{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 60px;
+    width: 70%;
+    align-items: center;
+    color: rgba(117, 117, 117, 1);;
+}
+
+.text-buttom{
+    margin: 0;
+}
+
+div.text-bottom h2{
+    margin: 0;
+    color: rgba(41, 41, 41, 1)
+}
+
+.img-buttom img{
+    width: 200px;
+    height: 180px;
+}
+
+.nameAndImgButtom{
+    display: flex;
+}
+
+.nameAndImgButtom img{
+    width: 40px;
+    height: 40px;
+   border-radius: 50%;
+}
+
+.star{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+.right div p{
+    background-color: rgba(242, 242, 242, 1);
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 100px;
+    color: rgba(41, 41, 41, 1);
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    
+}
+
+.right h2{
+    color: rgba(41, 41, 41, 1);
+
+}
+.hover p{
+    transition: all 500ms ease;
+}
+.hover p:hover{
+    background-color: rgb(175, 165, 165);;
+}
+
+.header_scrolling{
+    background-color: white;
+    transition: all 300ms linear;
+}
+
+.btn-scrolling{
+    background-color: rgb(26, 137, 23);
+    transition: all 300ms linear;
+}
