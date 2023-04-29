@@ -30,7 +30,7 @@
                     Stay curious.
                 </h1>
                 <p>
-                    Discover stories, thinking, and expertise from writers on any topic.
+                    Discover stories, thinking, and expertise <br>from writers on any topic.
                 </p>
                 <button id="button">
                     Start reading
@@ -5619,6 +5619,7 @@
 
     <script>
 
+/*Scroll*/
         var Header = document.getElementById('Header');
         var btn = document.getElementById('button');
         window.onscroll = function () {
@@ -5632,8 +5633,24 @@
             }
         };
 
+/*M opacity*/
 
-
+        var m = document.querySelectorAll('div.m svg g g g g g path');
+        console.log(m);
+        
+        
+        
+        setInterval(()=>{
+            var random1 = Math.round(Math.random()*m.length);
+            var random2 = Math.round(Math.random()*m.length);
+            m[random1].classList.add('m_opacity_full')
+            m[random2].classList.remove('m_opacity_full')
+            
+            
+            
+        }, 20)
+        
+        
     </script>
 </body>
 

@@ -75,8 +75,9 @@ header div button{
   
 }
 
-
-
+.m{
+    width: 80%;
+}
 .text{
     
     display: flex;
@@ -89,7 +90,7 @@ header div button{
 }
 
 .text h1{
-    font-size: 109px;
+    font-size: 119px;
     margin-bottom: 30px;
     font-family: 'Spectral', serif;
     line-height: 108px;
@@ -358,5 +359,12 @@ div.sticky{
 
 .btn-scrolling{
     background-color: rgb(26, 137, 23);
+    transition: all 300ms linear;
+}
+
+
+.m_opacity_full{
+
+    opacity: 0;
     transition: all 300ms linear;
 }
