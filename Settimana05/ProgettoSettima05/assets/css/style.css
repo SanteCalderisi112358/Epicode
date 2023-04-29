@@ -247,20 +247,24 @@ div div p span:hover{
 }
 
 .nameAndImgButtom img{
-    width: 40px;
-    height: 40px;
-   border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
 
+.nameAndImgButtom p{
+    margin: 0;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
 
 .star{
     display: flex;
     justify-content: space-between;
 }
 
-.right div:nth-child(1){
-    background-color: aqua;
-}
+
 .right div{
     display: flex;
     flex-wrap: wrap;
