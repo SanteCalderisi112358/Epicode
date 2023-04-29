@@ -25,15 +25,15 @@ header{
 header div{
     display: flex;
     height: 75px;
-    justify-content: space-between;
+    align-items: center;
     flex: 1;
 
 }
 
 header div img{
-    height: 25px;
-    margin-left: 50px;
-    margin-top: 25px;
+   
+    margin-left: 100px;
+    
     
 }
 header div ul{
@@ -48,17 +48,18 @@ li a{
     text-decoration: none;
     color: black;
     margin-right: 10px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 header div button{
     background: rgba(25, 25, 25, 1);
     border-radius: 20px;
     border: none;
+    padding: 10px 16px 9px;
     color: rgba(255, 255, 255, 1);
     margin: 10px;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 600;
     cursor: pointer;
     
 }
@@ -67,30 +68,32 @@ header div button{
 
 #hero{
     display: flex;
-    justify-content: center;
     margin-top: 75px;
     background-color: #ffc017;
     border-bottom: 1px solid black;
     padding-bottom: 50px;
 }
 
+
+
 .text{
-    flex: 1 80%;
+    
     display: flex;
+    flex: 2 0 60%;
     justify-content: center;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 100px;
     z-index: 10;
     height: 100%;
 }
 
 .text h1{
-    font-size: 87px;
+    font-size: 109px;
     margin-bottom: 30px;
     font-family: 'Spectral', serif;
     line-height: 108px;
     letter-spacing: -0.05em;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .text p{
@@ -115,8 +118,8 @@ header div button{
 
 .trend{
     display: flex;
-    margin: 50px;
-    margin-bottom: 10px;
+    margin: 50px 0 10px 100px;
+    
 }
 
 .trend img{
@@ -132,6 +135,7 @@ header div button{
     width: 20%;
     transition: all 500ms linear;
     cursor: pointer;
+    flex: 1 0 20%;
 }
 
 .card:hover{
@@ -188,6 +192,7 @@ div.card>p{
     margin-bottom: 100px;
     padding-bottom: 100px;
     border-bottom: 1px solid rgba(41, 41, 41, 1);
+    justify-content: center;
     
 }
 
@@ -200,15 +205,16 @@ div.card>p{
 
 .left{
     padding-left: 100px;
+    margin-right: 50px;
 }
 .card-buttom{
     display: flex;
-    justify-content: center;
     margin-left: 50px;
     margin-bottom: 60px;
-    width: 70%;
     align-items: center;
-    color: rgba(117, 117, 117, 1);;
+    color: rgba(117, 117, 117, 1);
+    width: 80%;
+    cursor: pointer;
 }
 
 .text-buttom{
@@ -222,9 +228,20 @@ div.text-bottom h2{
 
 .img-buttom img{
     width: 200px;
-    height: 180px;
+    height: 150px;
 }
 
+div div p span{
+    background-color: #E6E6E6;
+    padding: 5px 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+div div p span:hover{
+    background-color: rgb(175, 165, 165);
+}
 .nameAndImgButtom{
     display: flex;
 }
@@ -235,11 +252,15 @@ div.text-bottom h2{
    border-radius: 50%;
 }
 
+
 .star{
     display: flex;
     justify-content: space-between;
 }
 
+.right div:nth-child(1){
+    background-color: aqua;
+}
 .right div{
     display: flex;
     flex-wrap: wrap;
@@ -247,7 +268,7 @@ div.text-bottom h2{
     
 }
 .right div p{
-    background-color: rgba(242, 242, 242, 1);
+    background-color: #E6E6E6;
     padding: 8px 16px;
     cursor: pointer;
     border-radius: 100px;
@@ -266,7 +287,7 @@ div.text-bottom h2{
     transition: all 500ms ease;
 }
 .hover p:hover{
-    background-color: rgb(175, 165, 165);;
+    background-color: rgb(175, 165, 165);
 }
 
 .header_scrolling{
