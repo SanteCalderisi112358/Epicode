@@ -293,6 +293,10 @@ div div p span:hover{
     margin-left: 3px;
 }
 
+section.right{
+    position: sticky;
+    top: 75px;
+}
 .right div{
     display: flex;
     flex-wrap: wrap;
@@ -314,15 +318,26 @@ div div p span:hover{
 
 .right h2{
     color: rgba(41, 41, 41, 1);
+    position: sticky;
+    top: 75px;
 
 }
 
+div.square{
+    position: sticky;
+    top: 100px;
+}
 
 div.square p{
     border-radius: 0px;
     background-color: white;
     border: 1px solid rgba(41, 41, 41, 1);
     
+}
+
+div.sticky{
+    position: sticky;
+    top: 250px;
 }
 .hover p{
     transition: all 500ms ease;
