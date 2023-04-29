@@ -72,6 +72,7 @@ header div button{
     background-color: #ffc017;
     border-bottom: 1px solid black;
     padding-bottom: 50px;
+  
 }
 
 
@@ -94,12 +95,16 @@ header div button{
     line-height: 108px;
     letter-spacing: -0.05em;
     font-weight: 500;
+    
 }
 
 .text p{
     font-size: 24px;
+    font-weight: 400;
     margin: 0;
     margin-bottom: 50px;
+    color: rgba(41, 41, 41, 1);
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
     
 }
 
@@ -118,12 +123,14 @@ header div button{
 
 .trend{
     display: flex;
-    margin: 50px 0 10px 100px;
+    margin: 50px 0 0px 110px;
+    font-size: 16px;
+    font-weight: 500;
     
 }
 
 .trend img{
-    margin-left: 20px;
+    margin: 0 20px;
 }
 
 /*Section Cards*/
@@ -131,7 +138,7 @@ header div button{
 .card{
     margin-left: 20px;
     margin-right: 80px;
-    padding-left: 5px;
+    padding-top: 10px;
     display: flex;
     width: 20%;
     transition: all 500ms linear;
@@ -147,6 +154,7 @@ header div button{
 
 div.card>p{
     padding: 0;
+    margin-top: 0;
     color: rgba(230, 230, 230, 1);
     line-height: 38px;
     font-size: 32px;
@@ -167,7 +175,6 @@ div.card>p{
 }
 .nameAndImg{
     display: flex;
-    padding-top: 30px;
 }
 
 .nameAndImg p{
@@ -253,6 +260,7 @@ div div p span:hover{
 }
 .nameAndImgButtom{
     display: flex;
+    align-items: center;
 }
 
 .nameAndImgButtom img{
@@ -280,6 +288,11 @@ div div p span:hover{
     margin-right: 10px;
 }
 
+.star div p img{
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
 .right div{
     display: flex;
     flex-wrap: wrap;
@@ -302,6 +315,14 @@ div div p span:hover{
 .right h2{
     color: rgba(41, 41, 41, 1);
 
+}
+
+
+div.square p{
+    border-radius: 0px;
+    background-color: white;
+    border: 1px solid rgba(41, 41, 41, 1);
+    
 }
 .hover p{
     transition: all 500ms ease;
