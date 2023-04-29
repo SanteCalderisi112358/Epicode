@@ -290,10 +290,15 @@ div div p span:hover{
     background-color: rgb(175, 165, 165);
 }
 
+
+
 .header_scrolling{
     background-color: white;
     transition: all 300ms linear;
 }
+
+
+
 
 .btn-scrolling{
     background-color: rgb(26, 137, 23);
