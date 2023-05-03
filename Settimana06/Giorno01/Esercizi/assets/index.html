@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center">Pratica con il Grid System</h1>
+    <h2 class="text-center">Esercizio 1</h2>
+    <!-- Crea tre colonne con breakpoint md con background blu, testo bianco e con padding 3, opzionale il bordo nero.  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 w-33.333% bg-primary text-white border border-dark p-3">Prima colonna</div>
+            <div class="col-md-4 w-33.333% bg-primary text-white border border-dark p-3">Seconda colonna</div>
+            <div class="col-md-4 w-33.333% bg-primary text-white border border-dark p-3">Terza colonna</div>
+        </div>
+    
+        <h2 class="text-center">Esercizio 2</h2>
+<!-- Crea tre colonne di uguale larghezza. Sui dispositivi mobili e tablet le colonne si impilano automaticamente. 
+            Con background giallo, testo nero e con padding 3, opzionale il bordo nero.  -->      
+            <div class="row">
+                <div class="col-xl-4 text-dark border border-dark p-3 bg-warning">Prima colonna</div>
+                <div class="col-xl-4 text-dark border border-dark p-3 bg-warning">Seconda colonna</div>
+                <div class="col-xl-4 text-dark border border-dark p-3 bg-warning">Terza colonna</div>
+            </div>  
+        <h2 class="text-center">Esercizio 3</h2>
+        <!-- Creare una fila di colonne, che mostri: 
+                    * 3 colonne a schermo piccolo 
+                    * 4 colonne a schermo medio 
+                    * 6 colonne a schermo large 
+                    * 12 colonne a schermo xl  -->
+            <div class="row">
+                <div class="col bg-primary bg-success p-3 text-white p-3 border border-dark">Prma colonna</div>
+                <div class="col bg-primary bg-success p-3 text-white p-3 border border-dark">Seconda colonna</div>
+                <div class="col bg-primary bg-success p-3 text-white p-3 border border-dark">Terza colonna</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 bg-primary bg-success p-3 text-white p-3 border border-dark">Prma colonna</div>
+                <div class="col-md-4 bg-primary bg-success p-3 text-white p-3 border border-dark">Seconda colonna</div>
+                <div class="col-md-4 bg-primary bg-success p-3 text-white p-3 border border-dark">Terza colonna</div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 bg-primary bg-success p-3 text-white p-3 border border-dark">Prma colonna</div>
+                <div class="col-lg-4 bg-primary bg-success p-3 text-white p-3 border border-dark">Seconda colonna</div>
+                <div class="col-lg-4 bg-primary bg-success p-3 text-white p-3 border border-dark">Terza colonna</div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-4 bg-primary bg-success p-3 text-white p-3 border border-dark">Prma colonna</div>
+                <div class="col-xl-4 bg-primary bg-success p-3 text-white p-3 border border-dark">Seconda colonna</div>
+                <div class="col-xl-4 bg-primary bg-success p-3 text-white p-3 border border-dark">Terza colonna</div>
+            </div>
+
+            <div class="row">
+                <div class="col-xxl-4 bg-primary bg-success p-3 text-white p-3 border border-dark">Prma colonna</div>
+                <div class="col-xxl-4 bg-primary bg-success p-3 text-white p-3 border border-dark">Seconda colonna</div>
+                <div class="col-xxl-4 bg-primary bg-success p-3 text-white p-3 border border-dark">Terza colonna</div>
+            </div>
+
+            <h2 class="text-center">Esercizio 4</h2>
+            <!-- Crea tre colonne di diversa misura, le due laterali uguali. Iniziando dai desktop e scalando fino ai desktop di grandi dimensioni.
+            Ricorda che le colonne della griglia dovrebbero sommarsi fino a dodici per ogni singolo blocco orizzontale. 
+            Con background rosso, testo bianco e con padding 3, opzionale il bordo nero.  -->
+            <div class="row">
+                <div class="col-3 col-md-3 border border-dark text-white bg-danger p-3">Prima colonna</div>
+                <div class="col-6 col-md-6 border border-dark text-white bg-danger p-3">Seconda colonna</div>
+                <div class="col-3 col-md-3 border border-dark text-white bg-danger p-3">Terza colonna</div>
+            </div>
+
+            <h2 class="text-center">Esercizio 5</h2>
+            <!-- Crea due colonne. A partire dai desktop che scalano fino ai desktop grandi, 
+            con all'interno della colonna più grande altre due colonne (di uguale larghezza).
+            Per le dimensioni dei dispositivi mobili e tablet queste colonne e le loro colonne annidate si impileranno. 
+            Con background azzurro per le esterne e grigio per le annidate. Testo bianco e con padding 3, opzionale il bordo nero.  -->
+            <div class="row">
+                <div class="col-md-8 border border-dark bg-info text-white p-3">
+                    <div class="row">
+                        <div class="col-md-6 border border-dark bg-secondary text-white p-3">Prima colonna</div>
+                        <div class="col-md-6 border border-dark bg-secondary text-white p-3">Seconda colonna</div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4 border border-dark bg-info text-white p-3"></div>
+            </div>
+
+            <h2 class="text-center">Esercizio 6</h2>
+            <!-- Crea due colonne. A partire dai desktop che scalano fino ai desktop grandi. La seconda deve spostarsi di 2 porzioni.
+             Con background nero, testo bianco e con padding 3  -->
+             <div class="row">
+                <div class="col-md-3 bg-dark text-white p-3">Prima colonna</div>
+                <div class="col-md-3 offset-md-2 bg-dark text-white p-3">Seconda colonna spostata</div>
+             </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
