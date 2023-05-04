@@ -1,0 +1,22 @@
+$color: rgb(11, 172, 22);
+$bg-color: black;
+$f-size: 50px;
+$margin: 10px;
+$padding: 100px;
+$d: flex;
+$center: center;
+
+
+p{
+    color: $color;
+    padding: $padding;
+    font-size: $f-size;
+}
+
+div{
+    margin: $margin;
+    background-color:$bg-color;
+    display: $d;
+    justify-content: $center;
+    align-items: $center;
+}
