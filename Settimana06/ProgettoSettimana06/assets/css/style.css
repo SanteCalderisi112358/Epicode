@@ -73,6 +73,10 @@ header #bedge-green.start {
   color: #ebc506;
 }
 
+h5 {
+  font-size: 1.1em;
+}
+
 .card-text {
   align-items: baseline;
 }
