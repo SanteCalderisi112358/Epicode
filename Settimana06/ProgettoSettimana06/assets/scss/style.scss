@@ -12,7 +12,19 @@ header{
     .bi{
         margin-right: 0.5em;
     }
+    
+    #bedge-green.top{
+
+        top:90%
+    }
+    
+    #bedge-green.start{
+        right:-30%
+    }
+    
 }
+
+
 .hero{
     background-color: $bg-hero;
     display: flex;
@@ -41,6 +53,7 @@ header{
             background-color: darken(#52A23F, 20%);
         }
     }
+   
 }
 
 .texts{
@@ -78,11 +91,12 @@ header{
    }
 }
 
+.bi-star-fill{
+    color: #ebc506;
+}
 .card-text{
     align-items: baseline;
-    .bi.bi-star{
-        color: yellow;
-    }
+    
     .card-body{
         p{
             padding-top: 0.5em;
@@ -109,4 +123,7 @@ footer{
         
     }
 }
+
+
+
 

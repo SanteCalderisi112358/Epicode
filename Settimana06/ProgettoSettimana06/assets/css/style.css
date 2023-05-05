@@ -5,6 +5,12 @@ body {
 header .bi {
   margin-right: 0.5em;
 }
+header #bedge-green.top {
+  top: 90%;
+}
+header #bedge-green.start {
+  right: -30%;
+}
 
 .hero {
   background-color: #7153FA;
@@ -63,11 +69,12 @@ header .bi {
   margin-bottom: 1em;
 }
 
+.bi-star-fill {
+  color: #ebc506;
+}
+
 .card-text {
   align-items: baseline;
-}
-.card-text .bi.bi-star {
-  color: yellow;
 }
 .card-text .card-body p {
   padding-top: 0.5em;
