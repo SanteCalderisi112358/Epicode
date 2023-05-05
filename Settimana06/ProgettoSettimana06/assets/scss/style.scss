@@ -3,6 +3,15 @@ $bg-hero:#7153FA;
 $color-white: white;
 
 
+
+body{
+    margin: 0 auto;
+}
+header{
+    .bi{
+        margin-right: 0.5em;
+    }
+}
 .hero{
     background-color: $bg-hero;
     display: flex;
