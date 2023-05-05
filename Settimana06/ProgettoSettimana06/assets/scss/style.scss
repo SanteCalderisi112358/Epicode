@@ -20,22 +20,31 @@ header{
     align-items: center;
     padding-left: 3em;
 
+    div{
+        padding: 0 4em;
+    }
     h1,p{
         color: $color-white;   
     }
     p{
         opacity: 0.5;
+        font-size: 1.5em;
     }
     .btn{
         padding: 10px 15px;
+        font-weight: bold;
     }
     .btn-primary{
-        background-color: #61aa7d;
-        border: #61aa7d;
+        background-color: #52A23F;
+        border: #52A23F;
+        &:hover{
+            background-color: darken(#52A23F, 20%);
+        }
     }
 }
 
 .texts{
+    
     
     justify-content: center;
 
@@ -81,3 +90,23 @@ header{
         }
     }
 }
+
+.courses{
+    margin-bottom: 5em;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10em;
+   ul{
+        display: flex;
+        list-style-type: none;
+        li{
+            margin-left: 3em;
+        }
+        
+    }
+}
+
