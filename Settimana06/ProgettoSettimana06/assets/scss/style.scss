@@ -4,6 +4,7 @@
 @import "./animations/animations";
 $bg-hero:#7153FA;
 $color-white: white;
+
 body{
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
@@ -34,9 +35,10 @@ header{
         }
         
     }
-  
+    
 }
  
+     
 .hero{
     background-color: $bg-hero;
     display: flex;
