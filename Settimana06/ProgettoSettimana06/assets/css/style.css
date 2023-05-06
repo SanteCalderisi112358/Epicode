@@ -44,6 +44,9 @@ header #bedge-green.start {
 header #collapseExample {
   animation: animation-hero-bedge 200ms linear;
 }
+header nav #navbarNavDropdown {
+  font-weight: 800;
+}
 
 .hero {
   background-color: #7153FA;
@@ -139,6 +142,9 @@ h5 {
   cursor: pointer;
 }
 
+.card-body {
+  padding-bottom: 0;
+}
 .card-body del {
   font-size: 0.7em;
 }
@@ -152,6 +158,7 @@ h5 {
 }
 .card-body p {
   color: #64748B;
+  font-size: 16px;
 }
 
 .card-text {

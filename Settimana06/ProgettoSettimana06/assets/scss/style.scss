@@ -27,6 +27,13 @@ header{
         animation: animation-hero-bedge 200ms linear;
         
     }
+
+    nav{
+        #navbarNavDropdown{
+            font-weight: 800;
+        }
+        
+    }
   
 }
  
@@ -136,6 +143,8 @@ h5{
     }
 }
 .card-body{
+
+    padding-bottom: 0;
     del{
         font-size: 0.7em;
     }
@@ -150,6 +159,7 @@ h5{
     }
     p{
         color: #64748B;
+        font-size: 16px;
     }
 }
 .card-text{
