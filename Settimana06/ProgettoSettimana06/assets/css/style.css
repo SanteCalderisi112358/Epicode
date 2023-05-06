@@ -1,3 +1,23 @@
+@keyframes animation-hero-img {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes animation-hero-btn {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 body {
   margin: 0 auto;
 }
@@ -10,10 +30,6 @@ header #bedge-green.top {
 }
 header #bedge-green.start {
   right: -30%;
-}
-
-#card-Annette p.h5 {
-  margin: 0;
 }
 
 .hero {
@@ -36,6 +52,7 @@ header #bedge-green.start {
 .hero .btn {
   padding: 10px 15px;
   font-weight: bold;
+  animation: animation-hero-btn 2s linear 1 300ms;
 }
 .hero .btn-primary {
   background-color: #52A23F;
@@ -43,6 +60,9 @@ header #bedge-green.start {
 }
 .hero .btn-primary:hover {
   background-color: #2d5922;
+}
+.hero img {
+  animation: animation-hero-img 2s linear 1;
 }
 
 main {
@@ -85,12 +105,31 @@ h5 {
   font-size: 1.1em;
 }
 
+.card {
+  transition: all 300ms linear;
+}
+.card:hover {
+  box-shadow: 2px 2px 4px 2px lightblue, -2px -2px 4px 2px lightblue;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card-body del {
+  font-size: 0.7em;
+}
+.card-body strong {
+  margin: 0;
+}
+.card-body img {
+  margin-right: 0.5em;
+}
+
 .card-text {
   align-items: baseline;
 }
-.card-text .card-body p {
-  padding-top: 0.5em;
-  margin-left: 0.5em;
+.card-text .bi {
+  margin-right: 0.2em;
+  margin-top: 0.25em;
 }
 
 .courses {
