@@ -83,7 +83,6 @@ header #collapseExample {
 main h2 {
   font-size: 1.5rem;
   font-weight: 600;
-  line-height: 1.5;
 }
 
 .texts {
@@ -96,6 +95,7 @@ main h2 {
   align-items: center;
   justify-content: center;
   margin-right: 0.5em;
+  height: 56px;
 }
 .texts h2 {
   font-size: 1em;
