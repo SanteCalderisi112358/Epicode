@@ -22,8 +22,13 @@ header{
         right:-30%
     }
     
+  
 }
-
+ #card-Annette{
+    p.h5{
+        margin: 0;
+    }
+   }
 
 .hero{
     background-color: $bg-hero;
@@ -56,6 +61,9 @@ header{
    
 }
 
+main{
+    margin-bottom: 4em;
+}
 .texts{
     
     
@@ -111,14 +119,14 @@ h5{
 }
 
 .courses{
-    margin-bottom: 5em;
+    padding-bottom: 10em;
     
 }
 
 footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 10em;
+    
    ul{
         display: flex;
         list-style-type: none;
