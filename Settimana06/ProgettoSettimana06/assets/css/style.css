@@ -21,10 +21,10 @@
 }
 @keyframes animation-hero-bedge {
   0% {
-    transform: translateY(-100px);
+    opacity: 0;
   }
   100% {
-    transform: translateY(0px);
+    opacity: 1;
   }
 }
 body {
@@ -42,7 +42,7 @@ header #bedge-green.start {
   right: -30%;
 }
 header #collapseExample {
-  animation: animation-hero-bedge 1s linear;
+  animation: animation-hero-bedge 200ms linear;
 }
 
 .hero {
