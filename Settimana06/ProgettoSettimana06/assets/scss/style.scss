@@ -60,15 +60,16 @@ header{
         color: $color-white; 
     }
     .btn{
-        padding: 10px 15px;
-        font-weight: bold;
+        padding: 8px 16px;
+        font-weight: 600;
+        
         animation: animation-hero-btn 2s linear 1 300ms;
     }
     .btn-primary{
         background-color: #52A23F;
         border: #52A23F;
         &:hover{
-            background-color: darken(#52A23F, 20%);
+            background-color: darken(#52A23F, 5%);
         }
     }
    img{
