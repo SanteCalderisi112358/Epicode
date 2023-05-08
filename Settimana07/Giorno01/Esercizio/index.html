@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    
+
+    <script>
+
+        class User{
+            constructor(_firstName, _lastName, _age, _location){
+                this.firstName = _firstName,
+                this.lastName = _lastName,
+                this.age = _age,
+                this.location = _location
+            }
+
+            eta (istanza){
+                if(this.age>istanza.age){
+                    console.log(`${this.firstName} è più vecchio di ${istanza.firstName}`)
+                }else{
+                    console.log(`${istanza.firstName} è più vecchio di ${this.firstName}`)
+                }
+            }
+        }
+
+        const x = new User("Giovanni", "Alberti", 40, "Roma");
+        const y = new User("Alfredo", "Giovannini", 54, "Napoli");
+        const z = new User("Giorgio", "Belindini", 14, "Foggia");
+
+        console.log(x);
+        console.log(y);
+        console.log(z);
+        console.log(y.eta(x));
+        console.log(z.eta(x));
+    </script>
+</body>
+</html>

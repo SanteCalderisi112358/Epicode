@@ -63,7 +63,7 @@ header{
         padding: 8px 16px;
         font-weight: 600;
         
-        animation: animation-hero-btn 2s linear 1 300ms;
+        animation: animation-hero-btn 1s linear 1 ;
     }
     .btn-primary{
         background-color: #52A23F;
@@ -73,7 +73,7 @@ header{
         }
     }
    img{
-    animation: animation-hero-img 2s linear 1;
+    animation: animation-hero-img 1s linear 1;
    }
 }
 
