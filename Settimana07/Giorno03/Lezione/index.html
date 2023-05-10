@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        margin: 0 auto;
+    }
+    h1{
+        margin: 0;
+        padding: 20px ;
+    }
+    .animation-poster{
+        animation: animation-img 1s linear;
+    }
+
+    p{
+        font-size: 20px;
+        font-weight: bolder;
+       
+    }
+
+    @keyframes animation-img{
+        0%{
+            transform: translateX(500px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+</style>
+<body>
+    <h1 id="title"></h1>
+    <div id="poster"></div>
+
+    <script>
+        let title = document.getElementById('title')
+        let poster = document.getElementById('poster')
+         const url = 'https://www.omdbapi.com/?i=tt3896198&apikey=738f4ec8';
+            //JSONPlaceholder API: ottenere una lista di utenti.
+            fetch(url)
+            .then(url => url.json())
+            
+            .then(url => {
+                console.log(url)
+                console.log(`Il film è ${url.Title}, uscito nel ${url.Year}\nProtagonisti principali: ${url.Actors}`)
+                title.innerHTML = `${url.Title}`
+                
+                poster.innerHTML = `<img src="${url.Poster}" class="animation-poster">\n<p class="animation-poster">Released: ${url.Released}</p >\n<p class="animation-poster">Actors: ${url.Actors}</p>`
+
+
+            })
+            .catch(error => console.error('Errore durante il recupero degli utenti:', error));
+
+
+    </script>
+</body>
+</html>

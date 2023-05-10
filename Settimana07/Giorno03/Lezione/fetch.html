@@ -1,0 +1,93 @@
+<html>
+    <body>
+        <script>
+            const url = 'https://jsonplaceholder.typicode.com/users';
+
+            //JSONPlaceholder API: ottenere una lista di utenti.
+            fetch(url)
+            .then(response => response.json())
+            .then(users => {
+                console.log('Utenti:');
+                console.log("DATI UTENTE: ");
+                users.forEach(user => console.log(`${user.name} (${user.email})`));
+            })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            const url2 = 'https://dog.ceo/api/breeds/image/random';
+
+            //The Dog API: ottenere un'immagine casuale di un cane.
+            fetch(url2)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                console.log('URL dell\'immagine del cane:', data.message);
+            })
+            .catch(error => console.error('Errore durante il recupero dell\'immagine del cane:', error));
+
+            // API "Italy-Geojson" che fornisce informazioni sulle regioni, province e comuni italiani. 
+            // L'API è basata sui dati del progetto ISTAT e restituisce i dati in formato GeoJSON.
+            const url3 = 'https://raw.githubusercontent.com/openpolis/geojson-italy/master/geojson/limits_IT_regions.geojson';
+
+            fetch(url3)
+            .then(response => response.json())
+            .then(data => {
+                console.log('Regioni italiane:');
+                data.features.forEach(region => console.log(region.properties.reg_name));
+            })
+            .catch(error => console.error('Errore durante il recupero delle regioni italiane:', error));
+
+            //un esempio per ottenere la lista delle province italiane:
+            const url4 = 'https://raw.githubusercontent.com/openpolis/geojson-italy/master/geojson/limits_IT_provinces.geojson';
+
+            fetch(url4)
+            .then(response => response.json())
+            .then(data => {
+                console.log('Province italiane:');
+                data.features.forEach(province => console.log(province.properties.prov_name));
+            })
+            .catch(error => console.error('Errore durante il recupero delle province italiane:', error));
+
+
+            //JokeAPI: ottenere barzellette e scherzi casuali.
+            const url5 = 'https://v2.jokeapi.dev/joke/Any';
+
+            fetch(url5)
+                .then(response => response.json())
+                .then(joke => console.log('Barzelletta:', joke.setup ? `${joke.setup} ${joke.delivery}` : joke.joke))
+            .catch(error => console.error('Errore durante il recupero della barzelletta:', error));
+        
+            //interroga reddit sull'argomento memes            
+            const url6 = 'https://www.reddit.com/r/memes/top.json?limit=10';
+
+            fetch(url6)
+            .then(response => response.json())
+            .then(data => {
+                const memes = data.data.children.map(child => {
+                return {
+                    title: child.data.title,
+                    url: child.data.url,
+                    thumbnail: child.data.thumbnail
+                };
+                });
+
+                console.log('Meme recuperati:', memes);
+            })
+            .catch(error => console.error('Errore durante il recupero dei meme:', error));
+
+        </script>
+    </body>
+</html>
