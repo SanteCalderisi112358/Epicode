@@ -1,0 +1,67 @@
+body{
+    margin: 0 auto;
+    nav{
+        color: white;
+        ol{
+            li{
+                color: black;
+                
+            }
+        }
+    }
+}
+
+h1, form, button, input{
+    text-align: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnModifica{
+    display: inline;
+}
+
+nav{
+    background-color: white;
+    border-bottom: 1px solid lightblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    input{
+        margin: 10px;
+        width: 20%;
+       
+    }
+    button{
+        display: block;
+        width: 10%;
+        margin-top: 10px;
+    }
+}
+
+.card{
+    .card-img-top {
+    object-fit: contain;
+}
+
+&:hover{
+    box-shadow: 2px 2px 6px lightblue, -2px -2px 6px lightblue;
+    cursor: pointer;
+    
+}
+}
+
+#dettagli{
+    margin-top: 200px;
+}
+
+footer{
+    background-color: lightblue;
+}
+
