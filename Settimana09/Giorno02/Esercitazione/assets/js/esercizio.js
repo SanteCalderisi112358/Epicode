@@ -25,8 +25,8 @@ class MotherAccount extends SonAccount {
         };
     }
 }
-let sonAccount = new SonAccount();
-let momAccount = new MotherAccount();
+let sonAccount = new SonAccount(0);
+let momAccount = new MotherAccount(0);
 console.log('------SonAccount------');
 console.log(sonAccount.twoWithDraw(1000, 10, 750, 45));
 console.log('------MotherAccount------');
