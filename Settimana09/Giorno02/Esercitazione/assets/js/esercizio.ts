@@ -38,7 +38,7 @@ class MotherAccount extends SonAccount{
 let sonAccount = new SonAccount(0)
 let momAccount = new MotherAccount(0)
 
-console.log('SonAccount')
+console.log('------SonAccount------')
 console.log(sonAccount.twoWithDraw(1000, 10,750,45))
-console.log('MotherAccount')
+console.log('------MotherAccount------')
 console.log(momAccount.addInterest(300,34,890,564))
