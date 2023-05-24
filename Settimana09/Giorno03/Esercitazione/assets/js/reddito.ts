@@ -1,5 +1,3 @@
-
-
 class Lavoratore{
     codRedd:number;
     redditoAnnuoLordo:number;
@@ -24,12 +22,7 @@ class Lavoratore{
         return this.redditoAnnuoLordo-(this.getTasseInps()+this.getTasseIrpef())
     }
 }
-
-
-
 let btn = document.getElementById('btn')
-
-
 btn?.addEventListener('click', () => {
     let select_job = document.getElementById("select_job") as HTMLSelectElement;
     let job = select_job.options[select_job.selectedIndex];
@@ -43,13 +36,11 @@ btn?.addEventListener('click', () => {
         prof.innerText = "Artigiano"
     }else{
         prof.innerText = "Commerciante"
-    }
-    
+    } 
     console.log(job_type)
     console.log( reddito_annuo)
     console.log(typeof job_type)
     console.log(typeof reddito_annuo)
-    
     let lavoratore = new Lavoratore(job_type, reddito_annuo, 26.23, 15)
     console.log(lavoratore.getRedditoAnnuoLordo())
     prof.innerHTML +=`\n<p>Utile Tasse ${lavoratore.getUtileTasse()} €</p>\n<p>Tasse Inps ${lavoratore.getTasseInps().toFixed(2)} €</p>\n<p>Tasse Irpef ${lavoratore.getTasseIrpef().toFixed(2)} €</p>\n<p>Reddito Annuo Lordo ${lavoratore.getRedditoAnnuoLordo().toFixed(2)} €</p>`

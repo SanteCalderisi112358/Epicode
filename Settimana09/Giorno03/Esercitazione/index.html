@@ -11,7 +11,7 @@
 
 <body class="d-flex justify-content-center align-items-center">
   <div class="d-flex flex-column">
-    <h1 class="mb-5">Esercizio Giorno03 Settimana09</h1>
+    <h1 class="mb-5 mt-5">Esercizio Giorno03 Settimana09</h1>
     <input type="number" id="reddito_annuo" placeholder="Inserire Reddito" class="mb-3">
     <label for="lavoro">Tipologia Lavoratore</label>
     <select name="select" id="select_job" class="mb-3" placeholder="Tipologia" style="width: 35%;">
@@ -20,7 +20,10 @@
       <option value="62">Artigiano</option>
       <option value="40">Commerciante</option>
     </select>
-    <button id="btn" class="w-25 mb-5">Calcola</button>
+    <div class="d-flex justify-content-end">
+      <button id="btn" class="w-25 mb-5">Calcola</button>
+    </div>
+    
     <p id="professione" class="mb-5"></p>
     <p id="calcolo_reddito" class="mt-5"></p>
   </div>
