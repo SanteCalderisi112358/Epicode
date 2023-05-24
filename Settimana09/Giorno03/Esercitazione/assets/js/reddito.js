@@ -14,7 +14,7 @@ class Lavoratore {
     getTasseIrpef() {
         return this.getUtileTasse() * this.tasseIrpef / 100;
     }
-    getRedditoAnnuoReddito() {
+    getRedditoAnnuoLordo() {
         return this.redditoAnnuoLordo - (this.getTasseInps() + this.getTasseIrpef());
     }
 }
@@ -33,13 +33,13 @@ btn === null || btn === void 0 ? void 0 : btn.addEventListener('click', () => {
         prof.innerText = "Artigiano";
     }
     else {
-        prof.innerText = "Commericante";
+        prof.innerText = "Commerciante";
     }
     console.log(job_type);
     console.log(reddito_annuo);
     console.log(typeof job_type);
     console.log(typeof reddito_annuo);
     let lavoratore = new Lavoratore(job_type, reddito_annuo, 26.23, 15);
-    console.log(lavoratore.getRedditoAnnuoReddito());
-    prof.innerHTML += `\n<p>Utile Tasse ${lavoratore.getUtileTasse()} €</p>\n<p>Tasse Inps ${lavoratore.getTasseInps().toFixed(2)} €</p>\n<p>Tasse Irpef ${lavoratore.getTasseIrpef().toFixed(2)} €</p>\n<p>Reddito Annuo Lordo ${lavoratore.getRedditoAnnuoReddito().toFixed(2)} €</p>`;
+    console.log(lavoratore.getRedditoAnnuoLordo());
+    prof.innerHTML += `\n<p>Utile Tasse ${lavoratore.getUtileTasse()} €</p>\n<p>Tasse Inps ${lavoratore.getTasseInps().toFixed(2)} €</p>\n<p>Tasse Irpef ${lavoratore.getTasseIrpef().toFixed(2)} €</p>\n<p>Reddito Annuo Lordo ${lavoratore.getRedditoAnnuoLordo().toFixed(2)} €</p>`;
 });
