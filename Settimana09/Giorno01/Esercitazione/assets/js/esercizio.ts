@@ -1,7 +1,6 @@
 function esercizio(){
-    (document.getElementById('random_num') as HTMLElement).innerText = ''
     let random_number:number = Math.floor(Math.random()*(100-1)+1);
-    (document.getElementById('random_num') as HTMLElement).innerText += ' '+ String(random_number)
+    (document.getElementById('random_num') as HTMLElement).innerText = ' '+ String(random_number)
     if(Number((document.getElementById('giocatore01') as HTMLInputElement).value) === random_number){
         (document.getElementById('result') as HTMLElement).innerText = `Il Giocatore 1 ha indovinato!`
     }else if(Number((document.getElementById('giocatore02') as HTMLInputElement).value) === random_number){
