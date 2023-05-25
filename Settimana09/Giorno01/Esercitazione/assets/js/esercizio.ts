@@ -1,7 +1,4 @@
-
-
 function esercizio(){
-    
     (document.getElementById('random_num') as HTMLElement).innerText = ''
     let random_number:number = Math.floor(Math.random()*(100-1)+1);
     (document.getElementById('random_num') as HTMLElement).innerText += ' '+ String(random_number)
@@ -14,7 +11,4 @@ function esercizio(){
     }else{
         (document.getElementById('result') as HTMLElement).innerText = `Nessuno dei due ha azzeccato il numero casuale ${random_number}, ma il Giocatore 2 si è avvicinato!`
     }
-    
-   
-
 }
