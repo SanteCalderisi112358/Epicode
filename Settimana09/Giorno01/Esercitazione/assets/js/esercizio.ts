@@ -4,7 +4,7 @@ function esercizio(){
     
     let giocatore01 = Number((document.getElementById('giocatore01') as HTMLInputElement).value);
     let giocatore02 = Number((document.getElementById('giocatore02') as HTMLInputElement).value);
-   
+    console.log(document.getElementsByTagName('h1'))
     let paragraph = document.getElementById('random_num') as HTMLElement
     let result = document.getElementById('result') as HTMLElement
     let random_number = Math.floor(Math.random()*(100-1)+1);

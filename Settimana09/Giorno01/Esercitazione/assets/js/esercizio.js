@@ -1,6 +1,7 @@
 function esercizio() {
     let giocatore01 = Number(document.getElementById('giocatore01').value);
     let giocatore02 = Number(document.getElementById('giocatore02').value);
+    console.log(document.getElementsByTagName('h1'));
     let paragraph = document.getElementById('random_num');
     let result = document.getElementById('result');
     let random_number = Math.floor(Math.random() * (100 - 1) + 1);
